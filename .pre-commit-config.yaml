@@ -1,3 +1,6 @@
+# 跳过 agent/Claude Code 安装的 skill 附带资产，它们不是本仓库维护的项目代码。
+exclude: ^(\.agents/skills/|\.claude/skills/)
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
