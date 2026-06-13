@@ -8,6 +8,11 @@ repos:
       - id: end-of-file-fixer
       # 检查 JSON 文件语法是否有效。
       - id: check-json
+      # 检查 XML 文件语法是否有效。
+      - id: check-xml
+      # 自动格式化 JSON 文件，只调整缩进和换行，不重排原始 key 顺序。
+      - id: pretty-format-json
+        args: [--autofix, --no-sort-keys]
       # 检查 TOML 文件语法是否有效。
       - id: check-toml
       # 检查 YAML 文件语法是否有效。
