@@ -1,0 +1,15 @@
+[project]
+name = "bilibili-emote"
+version = "0.1.0"
+description = "bilibili emote downloader"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiofiles>=25.1.0",
+    "orjson>=3.11.9",
+    "pre-commit>=4.6.0",
+    "pre-commit-hooks>=6.0.0",
+    "pyupgrade>=3.21.2",
+    "spdl>=0.5.0",
+    "waifuboard>=1.0.14",
+]
