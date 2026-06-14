@@ -1,5 +1,21 @@
 # **bilibili-emote**
 
+## **表情包下载器**
+
+本仓库提供一个 Streamlit 前端，可以搜索每天自动更新的表情包索引，勾选一个或多个表情包后在浏览器中生成 zip 下载包。
+
+```bash
+uv run streamlit run streamlit_app.py
+```
+
+下载包目录结构与本地全量爬取保持一致：
+
+```text
+bilibili-emote/
+  images/
+  jsons/
+```
+
 ---
 
 <!-- BILIBILI_EMOTE_INDEX_START -->
