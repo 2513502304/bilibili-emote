@@ -28,6 +28,7 @@ repos:
       - id: debug-statements
       # 阻止误提交体积过大的文件。
       - id: check-added-large-files
+        args: [--maxkb=4096]
 
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.21.2

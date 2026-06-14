@@ -1,0 +1,45 @@
+name: Update emote index
+
+on:
+  schedule:
+    # 每天 02:00（Asia/Shanghai）运行；GitHub Actions cron 使用 UTC。
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-emote-index
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Update README emote index
+        env:
+          BILIBILI_COOKIE: ${{ secrets.BILIBILI_COOKIE }}
+          BILIBILI_SESSDATA: ${{ secrets.BILIBILI_SESSDATA }}
+        run: python scripts/update_emote_index.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/emote_index.json
+          if git diff --cached --quiet; then
+            echo "No emote index changes to commit."
+          else
+            git commit -m "docs: update emote index"
+            git push
+          fi
