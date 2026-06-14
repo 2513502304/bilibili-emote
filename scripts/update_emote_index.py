@@ -131,6 +131,7 @@ def type_label(value: Any) -> str:
         2: "会员专属",
         3: "购买所得",
         4: "颜文字",
+        12: "充电所得",
     }
     return labels.get(package_type, f"未知({package_type})")
 

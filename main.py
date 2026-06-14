@@ -149,7 +149,7 @@ async def emote_detail(t: tuple[int, str]):
         emote_mtime: int = emote["mtime"]  # 创建时间。时间戳
         emote_type: int = emote[
             "type"
-        ]  # 表情包集合类型。1：普通；2：会员专属；3：购买所得；4：颜文字（颜文字只有封面图为链接的形式，具体内部的表情包均为文本，例如："( \u309c- \u309c)\u3064\u30ed"）
+        ]  # 表情包集合类型。1：普通；2：会员专属；3：购买所得；4：颜文字（颜文字只有封面图为链接的形式，具体内部的表情包均为文本，例如："( \u309c- \u309c)\u3064\u30ed"）；12：充电所得
         emote_attr: int = emote["attr"]
         emote_meta: dict = emote["meta"]  # 属性信息
         emote_flags: dict = emote["flags"]  # 禁用标志，无则为空
