@@ -17,14 +17,9 @@ from spdl.pipeline import PipelineBuilder
 from waifuboard import Booru
 from waifuboard.utils import normalize_filepath
 
-# 认证方式：Cookie（SESSDATA）
-cookies = ""
-cookies = dict(item.split("=", 1) for item in cookies.split("; "))
-
 client = Booru(
     logger_level=logging.WARNING,
     base_url=(base_url := (referer := "https://www.bilibili.com")),
-    cookies=cookies,
     proxies=None,
     trust_env=False,
     max_attempt_number=3,
@@ -49,12 +44,16 @@ async def emote_index():
     # --- requests 获取所有表情包列表 API ---
     url = "https://api.bilibili.com/x/emote/setting/panel"  # 获取所有表情包列表 API
 
+    headers = {
+        "Cookie": "",  # 认证方式：Cookie（SESSDATA）
+    }
     params = {
         "business": "reply",  # 使用场景，必要：reply：评论区；dynamic：动态
     }
 
     response = await client.get(
         url,
+        headers=headers,
         params=params,
         referer=referer,
     )
@@ -150,7 +149,7 @@ async def emote_detail(t: tuple[int, str]):
         emote_mtime: int = emote["mtime"]  # 创建时间。时间戳
         emote_type: int = emote[
             "type"
-        ]  # 表情包集合类型。1：普通；2：会员专属；3：购买所得；4：颜文字（颜文字只有封面图为链接的形式，具体内部的表情包均为文本，例如："( \u309c- \u309c)\u3064\u30ed"）
+        ]  # 表情包集合类型。1：普通；2：会员专属；3：购买所得；4：颜文字（颜文字只有封面图为链接的形式，具体内部的表情包均为文本，例如："( \u309c- \u309c)\u3064\u30ed"）；12：充电所得
         emote_attr: int = emote["attr"]
         emote_meta: dict = emote["meta"]  # 属性信息
         emote_flags: dict = emote["flags"]  # 禁用标志，无则为空
