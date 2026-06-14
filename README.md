@@ -1,29 +1,92 @@
 # **bilibili-emote**
 
-## **表情包下载器**
+一个每天自动更新的 Bilibili 表情包索引和下载工具。你可以直接在网页中搜索、预览、勾选并下载表情包，也可以在本地全量下载所有表情包。
 
-本仓库提供一个 Streamlit 前端，可以搜索每天自动更新的 Bilibili 表情包索引，并按需下载选中的表情包。
+## **网页下载**
+
+访问：[https://bilibili-emote.streamlit.app/](https://bilibili-emote.streamlit.app/)
+
+页面基于每天自动更新的索引，支持按表情包 ID 或名称搜索，也可以分页浏览全量索引。
 
 下载流程：
 
-- 先在前端搜索、浏览并勾选一个或多个表情包。
-- 点击“生成压缩包”后，运行 Streamlit 的服务端才会临时获取公开表情包图片和元数据，并在内存中写入 zip。
+- 先搜索、浏览并勾选一个或多个表情包。
+- 点击“生成压缩包”后，Streamlit 服务器才会临时获取公开表情包图片和元数据，并在内存中写入 zip。
 - 点击“保存压缩包”后，浏览器下载已经生成好的 zip 文件。
-- 如果你在本机运行 Streamlit，下载和打包发生在本机；如果部署到远程服务器，下载和打包发生在远程服务器。
+
+如果你在本机运行页面，下载和打包发生在本机；如果使用在线应用，下载和打包发生在 `bilibili-emote.streamlit.app` 使用的 Streamlit 服务器。
+
+## **本地运行**
+
+本项目最低需要 Python 3.10。推荐使用 `uv` 管理环境。
+
+安装依赖：
+
+```bash
+uv sync
+```
+
+启动下载前端：
 
 ```bash
 uv run streamlit run streamlit_app.py
 ```
 
-zip 内部目录结构：
+指定端口启动：
+
+```bash
+uv run streamlit run streamlit_app.py --server.port 8501
+```
+
+## **zip 内部目录结构**
+
+网页下载和本地全量下载都会生成 `bilibili-emote/` 目录结构：
+
+- `images/`：按表情包集合拆分图片目录，每个目录名由集合 ID 和集合名称组成。
+- `jsons/`：保存每个表情包集合的原始明细 JSON，文件名和图片目录对应。
+
+例如选择《孤独摇滚》《Mygo表情包》《Ave Mujica》后，zip 内部会类似这样：
 
 ```text
 bilibili-emote/
   images/
+    7242_孤独摇滚/
+      ...
+    5390_Mygo表情包/
+      ...
+    7961_Ave Mujica/
+      ...
   jsons/
+    7242_孤独摇滚.json
+    5390_Mygo表情包.json
+    7961_Ave Mujica.json
 ```
 
----
+每个 `images/` 子目录里存放该集合下的具体表情图片；对应的 `jsons/*.json` 保存 Bilibili 表情包明细接口返回的元数据。
+
+## **全量下载所有表情包**
+
+如果需要在本机重新请求索引、获取明细并下载全量图片，可以运行：
+
+```bash
+uv run main.py
+```
+
+也可以显式通过 Python 启动：
+
+```bash
+uv run python main.py
+```
+
+脚本会把结果写入当前目录下的 `./bilibili-emote/images/` 和 `./bilibili-emote/jsons/`。全量下载会请求大量公开图片，请根据本机网络情况预留时间和磁盘空间。
+
+## **自动更新**
+
+仓库通过 GitHub Actions 每天更新一次表情包索引和 README 中的表格。本地只根据已有数据重新生成 README 时可以运行：
+
+```bash
+uv run scripts/update_emote_index.py --offline
+```
 
 <!-- BILIBILI_EMOTE_INDEX_START -->
 <!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->
@@ -33,7 +96,7 @@ bilibili-emote/
 ### **2026/06/13**
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| --- | --- | --- | --- | --- |
+| :---: | --- | :---: | :---: | :---: |
 | `9920` | **一陆同行** | <img src="https://i0.hdslb.com/bfs/garb/74a113051e44384b5c3ef6da422286cefe803b27.png" alt="一陆同行" width="64"> | 2026/06/13 19:01 | 购买所得 |
 | `9919` | **名侦探光之美少女** | <img src="https://i0.hdslb.com/bfs/garb/eee71c689820db0bba94ffb479065016e6db5e8d.png" alt="名侦探光之美少女" width="64"> | 2026/06/13 18:01 | 购买所得 |
 | `8481` | **白粥动画（充电）** | <img src="https://i0.hdslb.com/bfs/garb/c127347539241935f6e5a13435f3f98af511512c.png" alt="白粥动画（充电）" width="64"> | 2026/06/13 17:54 | 充电所得 |
@@ -42,7 +105,7 @@ bilibili-emote/
 ### **2026/06/12**
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| --- | --- | --- | --- | --- |
+| :---: | --- | :---: | :---: | :---: |
 | `9916` | **挞咪mibi** | <img src="https://i0.hdslb.com/bfs/garb/018a4e17d2654c84393dd35e8f47619caa093874.png" alt="挞咪mibi" width="64"> | 2026/06/12 18:55 | 购买所得 |
 | `9917` | **Megami** | <img src="https://i0.hdslb.com/bfs/garb/cb1d739ae4433d2d17991cca56735b3e917db6a4.png" alt="Megami" width="64"> | 2026/06/12 18:55 | 购买所得 |
 | `9915` | **薄荷绿小熊** | <img src="https://i0.hdslb.com/bfs/garb/10af1494a619a905cf7b98af7fcc0aa9204dcbbd.png" alt="薄荷绿小熊" width="64"> | 2026/06/12 17:17 | 购买所得 |
@@ -63,7 +126,7 @@ bilibili-emote/
 ### **2026/06/11**
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| --- | --- | --- | --- | --- |
+| :---: | --- | :---: | :---: | :---: |
 | `9901` | **兔兔超人2表情包** | <img src="https://i0.hdslb.com/bfs/garb/5a713ceb602709ade8f9b41d9429e8b357e262bc.png" alt="兔兔超人2表情包" width="64"> | 2026/06/11 18:00 | 购买所得 |
 | `9900` | **软喵动漫-西瓜冻冻（充电）** | <img src="https://i0.hdslb.com/bfs/garb/fe38b26c3b3db58e5e3d8f97d8b263ec2c4e6385.png" alt="软喵动漫-西瓜冻冻（充电）" width="64"> | 2026/06/11 15:31 | 充电所得 |
 | `9898` | **高达SF静态表情包** | <img src="https://i0.hdslb.com/bfs/garb/a3422afb3ef60967fb4c9ca7c7ad58f54ccc4d18.png" alt="高达SF静态表情包" width="64"> | 2026/06/11 14:47 | 购买所得 |
@@ -74,7 +137,7 @@ bilibili-emote/
 ### **2026/06/10**
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| --- | --- | --- | --- | --- |
+| :---: | --- | :---: | :---: | :---: |
 | `9894` | **土豪小姐姐表情包** | <img src="https://i0.hdslb.com/bfs/garb/d5131414f8a3fa8cb426ecb5e3da5e56e3a7fcce.png" alt="土豪小姐姐表情包" width="64"> | 2026/06/10 21:04 | 购买所得 |
 | `9893` | **黑客33表情包** | <img src="https://i0.hdslb.com/bfs/garb/464b7aa098d5407208ce417ce68a11fe6463d150.png" alt="黑客33表情包" width="64"> | 2026/06/10 21:04 | 购买所得 |
 | `9892` | **月光怪盗22表情包** | <img src="https://i0.hdslb.com/bfs/garb/5424acfd8a568cf63bf982257ad7b9c99755396d.png" alt="月光怪盗22表情包" width="64"> | 2026/06/10 21:03 | 购买所得 |
@@ -86,7 +149,7 @@ bilibili-emote/
 ### **2026/06/09**
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| --- | --- | --- | --- | --- |
+| :---: | --- | :---: | :---: | :---: |
 | `9888` | **小狐做个好梦** | <img src="https://i0.hdslb.com/bfs/garb/e1dbbf93f2abdd8de3453fbb3bccb55b054da384.png" alt="小狐做个好梦" width="64"> | 2026/06/09 19:55 | 购买所得 |
 | `9887` | **麻薯波比呀（充电）** | <img src="https://i0.hdslb.com/bfs/garb/530c16a686faf52d4fec7b8f35dd1c067f074a3c.png" alt="麻薯波比呀（充电）" width="64"> | 2026/06/09 18:35 | 充电所得 |
 | `9886` | **FsF表情包** | <img src="https://i0.hdslb.com/bfs/garb/4ea8199742f2274094f19e0cb0c8513b5af44c46.png" alt="FsF表情包" width="64"> | 2026/06/09 12:01 | 购买所得 |
@@ -94,7 +157,7 @@ bilibili-emote/
 ### **2026/06/08**
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| --- | --- | --- | --- | --- |
+| :---: | --- | :---: | :---: | :---: |
 | `9885` | **破碎的祈愿表情包** | <img src="https://i0.hdslb.com/bfs/garb/e0b1c47106de5c712ffd71395b9c42833aa35afc.png" alt="破碎的祈愿表情包" width="64"> | 2026/06/08 18:01 | 购买所得 |
 | `9884` | **喵桑 咪梦点点** | <img src="https://i0.hdslb.com/bfs/garb/7e701769619bfe1e205ad85a9a988eaed7efa003.png" alt="喵桑 咪梦点点" width="64"> | 2026/06/08 16:17 | 购买所得 |
 
@@ -106,7 +169,7 @@ bilibili-emote/
 <summary>展开全部 7246 个表情包预览 URL</summary>
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| --- | --- | --- | --- | --- |
+| :---: | --- | :---: | :---: | :---: |
 | `1` | **小黄脸** | <img src="https://i0.hdslb.com/bfs/emote/3087d273a78ccaff4bb1e9972e2ba2a7583c9f11.png" alt="小黄脸" width="64"> | 2026/05/26 11:24 | 普通 |
 | `2` | **tv_小电视** | <img src="https://i0.hdslb.com/bfs/emote/f3517fc58c71236da5f0355b688ba302ae90c074.png" alt="tv_小电视" width="64"> | 2025/09/03 16:08 | 普通 |
 | `3` | **喵** | <img src="http://i0.hdslb.com/bfs/emote/eb46e78c9d86ccbe9842f0235c7cb4f4e0e80a57.png" alt="喵" width="64"> | 2021/08/10 17:21 | 普通 |

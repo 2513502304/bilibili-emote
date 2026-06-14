@@ -283,7 +283,7 @@ def package_row(package: dict[str, Any]) -> str:
 def table_for_packages(packages: list[dict[str, Any]]) -> str:
     lines = [
         "| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |",
-        "| --- | --- | --- | --- | --- |",
+        "| :---: | --- | :---: | :---: | :---: |",
     ]
     lines.extend(package_row(package) for package in packages)
     return "\n".join(lines)
