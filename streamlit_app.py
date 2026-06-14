@@ -7,10 +7,10 @@ import html
 import io
 import logging
 from pathlib import Path
-from typing import Any
 from collections.abc import Callable
+from typing import Any
 from urllib.error import HTTPError, URLError
-from urllib.parse import unquote, urlparse
+from urllib.parse import unquote, urlparse, urlunparse
 from urllib.request import Request, urlopen
 from zipfile import ZIP_DEFLATED, ZipFile
 
@@ -31,6 +31,7 @@ DEFAULT_PAGE_SIZE = 48
 DETAIL_CONCURRENCY = 8
 MEDIA_CONCURRENCY = 32
 DETAIL_PROGRESS_WEIGHT = 0.35
+TRUSTED_IMAGE_HOST_SUFFIXES = ("hdslb.com", "bilibili.com")
 SELECTED_IDS_KEY = "selected_package_ids"
 ARCHIVE_BYTES_KEY = "archive_bytes"
 ARCHIVE_NAME_KEY = "archive_name"
@@ -263,7 +264,8 @@ st.markdown(
 
 
 @st.cache_data(show_spinner=False)
-def load_index(path: str) -> dict[str, Any]:
+def load_index(path: str, mtime_ns: int) -> dict[str, Any]:
+    _ = mtime_ns
     payload = orjson.loads(Path(path).read_bytes())
 
     packages = payload.get("packages", [])
@@ -424,10 +426,27 @@ def mime_from_url(url: str) -> str:
     }.get(suffix, "application/octet-stream")
 
 
+def trusted_image_url(url: str) -> str | None:
+    parsed = urlparse(url)
+    host = (parsed.hostname or "").lower()
+    if parsed.scheme not in {"http", "https"}:
+        return None
+    if not any(
+        host == suffix or host.endswith(f".{suffix}") for suffix in TRUSTED_IMAGE_HOST_SUFFIXES
+    ):
+        return None
+
+    return urlunparse(parsed._replace(scheme="https"))
+
+
 @st.cache_data(show_spinner=False, ttl=60 * 60 * 24)
 def preview_data_uri(url: str) -> str | None:
+    safe_url = trusted_image_url(url)
+    if safe_url is None:
+        return None
+
     request = Request(
-        url,
+        safe_url,
         headers={
             "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
             "Referer": REFERER,
@@ -436,7 +455,7 @@ def preview_data_uri(url: str) -> str | None:
     )
     try:
         with urlopen(request, timeout=20.0) as response:
-            content_type = response.headers.get_content_type() or mime_from_url(url)
+            content_type = response.headers.get_content_type() or mime_from_url(safe_url)
             encoded = base64.b64encode(response.read()).decode("ascii")
             return f"data:{content_type};base64,{encoded}"
     except (HTTPError, URLError, TimeoutError):
@@ -466,7 +485,8 @@ def render_package_card(package: dict[str, Any], selected_ids: set[int]) -> None
     package_id = int(package["id"])
     safe_name = html.escape(str(package["name"]))
     preview_url = str(package["preview_url"])
-    preview_src = preview_data_uri(preview_url) or preview_url
+    safe_preview_url = trusted_image_url(preview_url)
+    preview_src = preview_data_uri(preview_url) or safe_preview_url
     image_html = (
         f'<img src="{html.escape(preview_src, quote=True)}" alt="{safe_name}" loading="lazy" referrerpolicy="no-referrer">'
         if preview_src
@@ -617,13 +637,10 @@ async def fetch_emote_bytes(
     package_id: int,
     package_name: str,
     emote: dict[str, Any],
+    emote_url: str,
     semaphore: asyncio.Semaphore,
 ) -> tuple[str, bytes, str]:
     emote_name = normalize_filepath(str(emote.get("text") or emote.get("id") or "emote"))
-    emote_url = str(emote.get("url") or "")
-    if not emote_url.startswith(("http://", "https://")):
-        raise RuntimeError(f"[{package_id}] {package_name}: skipped non-image emote {emote_name}")
-
     emote_path = (
         f"bilibili-emote/images/{package_id}_{normalize_filepath(package_name)}/"
         f"{emote_name}{extension_from_url(emote_url)}"
@@ -647,10 +664,6 @@ ProgressCallback = Callable[[float, str, str | None], None]
 
 def is_text_package(package: dict[str, Any]) -> bool:
     return int(package.get("type") or 0) == 4
-
-
-def is_image_url(url: str) -> bool:
-    return url.startswith(("http://", "https://"))
 
 
 async def build_zip_async(
@@ -715,7 +728,7 @@ async def build_zip_async(
                         f"[{package_id}] 已获取 {package_name} 明细",
                     )
 
-        media_jobs: list[tuple[dict[str, Any], dict[str, Any], dict[str, Any]]] = []
+        media_jobs: list[tuple[dict[str, Any], dict[str, Any], dict[str, Any], str]] = []
         for package, detail in details:
             package_id = int(package["id"])
             package_name = str(package["name"])
@@ -735,7 +748,8 @@ async def build_zip_async(
 
                 emote_name = str(emote.get("text") or emote.get("id") or "emote")
                 emote_url = str(emote.get("url") or "")
-                if int(emote.get("type") or 0) == 4 or not is_image_url(emote_url):
+                safe_emote_url = trusted_image_url(emote_url)
+                if int(emote.get("type") or 0) == 4 or safe_emote_url is None:
                     skipped_texts += 1
                     if progress_callback:
                         progress_callback(
@@ -745,7 +759,7 @@ async def build_zip_async(
                         )
                     continue
 
-                media_jobs.append((package, detail, emote))
+                media_jobs.append((package, detail, emote, safe_emote_url))
 
         if not details:
             if progress_callback:
@@ -779,10 +793,11 @@ async def build_zip_async(
                         int(package["id"]),
                         str(package["name"]),
                         emote,
+                        emote_url,
                         media_semaphore,
                     )
                 )
-                for package, _, emote in media_jobs
+                for package, _, emote, emote_url in media_jobs
             ]
             for completed_index, task in enumerate(asyncio.as_completed(media_tasks), start=1):
                 try:
@@ -1017,7 +1032,7 @@ def render_download_panel(packages: list[dict[str, Any]]) -> None:
 
 def main() -> None:
     init_state()
-    index = load_index(str(INDEX_PATH))
+    index = load_index(str(INDEX_PATH), INDEX_PATH.stat().st_mtime_ns)
     packages = list(index["packages"])
     frame = package_frame(packages)
 

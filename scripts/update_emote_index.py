@@ -316,7 +316,7 @@ def build_generated_block(index: dict[str, Any], recent_days: int) -> str:
         README_START,
         "<!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->",
         "",
-        "## **最近 7 天上新表情包**",
+        f"## **最近 {recent_days} 天上新表情包**",
         "",
     ]
 
@@ -331,7 +331,7 @@ def build_generated_block(index: dict[str, Any], recent_days: int) -> str:
                 ]
             )
     else:
-        lines.extend(["暂无最近 7 天上新的表情包。", ""])
+        lines.extend([f"暂无最近 {recent_days} 天上新的表情包。", ""])
 
     lines.extend(
         [
