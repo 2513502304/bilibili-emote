@@ -13,9 +13,9 @@ repos:
       - id: check-json
       # 检查 XML 文件语法是否有效。
       - id: check-xml
-      # 自动格式化 JSON 文件，只调整缩进和换行，不重排原始 key 顺序。
+      # 自动格式化 JSON 文件，只调整缩进（4 空格缩进）和换行，关闭 ASCII 强制转义，直接保留原始 Unicode 字符，不重排原始 key 顺序。
       - id: pretty-format-json
-        args: [--autofix, --no-sort-keys]
+        args: [--autofix, --indent=4, --no-ensure-ascii, --no-sort-keys]
       # 检查 TOML 文件语法是否有效。
       - id: check-toml
       # 检查 YAML 文件语法是否有效。

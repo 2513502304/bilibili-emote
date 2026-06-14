@@ -17,14 +17,9 @@ from spdl.pipeline import PipelineBuilder
 from waifuboard import Booru
 from waifuboard.utils import normalize_filepath
 
-# 认证方式：Cookie（SESSDATA）
-cookies = ""
-cookies = dict(item.split("=", 1) for item in cookies.split("; "))
-
 client = Booru(
     logger_level=logging.WARNING,
     base_url=(base_url := (referer := "https://www.bilibili.com")),
-    cookies=cookies,
     proxies=None,
     trust_env=False,
     max_attempt_number=3,
@@ -49,12 +44,16 @@ async def emote_index():
     # --- requests 获取所有表情包列表 API ---
     url = "https://api.bilibili.com/x/emote/setting/panel"  # 获取所有表情包列表 API
 
+    headers = {
+        "Cookie": "",  # 认证方式：Cookie（SESSDATA）
+    }
     params = {
         "business": "reply",  # 使用场景，必要：reply：评论区；dynamic：动态
     }
 
     response = await client.get(
         url,
+        headers=headers,
         params=params,
         referer=referer,
     )
