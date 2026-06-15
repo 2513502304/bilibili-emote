@@ -93,6 +93,12 @@ uv run scripts/update_emote_index.py --offline
 
 ## **最近 7 天上新表情包（截至北京时间 2026/06/14）**
 
+### **2026/06/14**
+
+| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
+| :---: | --- | :---: | :---: | :---: |
+| `9900` | **软喵动漫-西瓜冻冻（充电）** | <img src="https://i0.hdslb.com/bfs/garb/fe38b26c3b3db58e5e3d8f97d8b263ec2c4e6385.png" alt="软喵动漫-西瓜冻冻（充电）" width="64"> | 2026/06/14 18:21 | 充电所得 |
+
 ### **2026/06/13**
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
@@ -128,7 +134,6 @@ uv run scripts/update_emote_index.py --offline
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
 | :---: | --- | :---: | :---: | :---: |
 | `9901` | **兔兔超人2表情包** | <img src="https://i0.hdslb.com/bfs/garb/5a713ceb602709ade8f9b41d9429e8b357e262bc.png" alt="兔兔超人2表情包" width="64"> | 2026/06/11 18:00 | 购买所得 |
-| `9900` | **软喵动漫-西瓜冻冻（充电）** | <img src="https://i0.hdslb.com/bfs/garb/fe38b26c3b3db58e5e3d8f97d8b263ec2c4e6385.png" alt="软喵动漫-西瓜冻冻（充电）" width="64"> | 2026/06/11 15:31 | 充电所得 |
 | `9898` | **高达SF静态表情包** | <img src="https://i0.hdslb.com/bfs/garb/a3422afb3ef60967fb4c9ca7c7ad58f54ccc4d18.png" alt="高达SF静态表情包" width="64"> | 2026/06/11 14:47 | 购买所得 |
 | `9897` | **雨下恋歌情深时** | <img src="https://i0.hdslb.com/bfs/garb/c25fdaa85ad8a4889e527c32c063ed9e30b932f2.png" alt="雨下恋歌情深时" width="64"> | 2026/06/11 14:21 | 购买所得 |
 | `9896` | **破碎猫 爱自己** | <img src="https://i0.hdslb.com/bfs/garb/6daa0f58f821f6443246f49c273fbeeb2c5534ad.png" alt="破碎猫 爱自己" width="64"> | 2026/06/11 14:20 | 购买所得 |
@@ -166,7 +171,7 @@ uv run scripts/update_emote_index.py --offline
 ## **全部表情包索引**
 
 <details>
-<summary>展开全部 7246 个表情包预览 URL</summary>
+<summary>展开全部 7247 个表情包预览 URL</summary>
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
 | :---: | --- | :---: | :---: | :---: |
@@ -7395,7 +7400,7 @@ uv run scripts/update_emote_index.py --offline
 | `9896` | **破碎猫 爱自己** | <img src="https://i0.hdslb.com/bfs/garb/6daa0f58f821f6443246f49c273fbeeb2c5534ad.png" alt="破碎猫 爱自己" width="64"> | 2026/06/11 14:20 | 购买所得 |
 | `9897` | **雨下恋歌情深时** | <img src="https://i0.hdslb.com/bfs/garb/c25fdaa85ad8a4889e527c32c063ed9e30b932f2.png" alt="雨下恋歌情深时" width="64"> | 2026/06/11 14:21 | 购买所得 |
 | `9898` | **高达SF静态表情包** | <img src="https://i0.hdslb.com/bfs/garb/a3422afb3ef60967fb4c9ca7c7ad58f54ccc4d18.png" alt="高达SF静态表情包" width="64"> | 2026/06/11 14:47 | 购买所得 |
-| `9900` | **软喵动漫-西瓜冻冻（充电）** | <img src="https://i0.hdslb.com/bfs/garb/fe38b26c3b3db58e5e3d8f97d8b263ec2c4e6385.png" alt="软喵动漫-西瓜冻冻（充电）" width="64"> | 2026/06/11 15:31 | 充电所得 |
+| `9900` | **软喵动漫-西瓜冻冻（充电）** | <img src="https://i0.hdslb.com/bfs/garb/fe38b26c3b3db58e5e3d8f97d8b263ec2c4e6385.png" alt="软喵动漫-西瓜冻冻（充电）" width="64"> | 2026/06/14 18:21 | 充电所得 |
 | `9901` | **兔兔超人2表情包** | <img src="https://i0.hdslb.com/bfs/garb/5a713ceb602709ade8f9b41d9429e8b357e262bc.png" alt="兔兔超人2表情包" width="64"> | 2026/06/11 18:00 | 购买所得 |
 | `9902` | **2233破界琴诗表情包** | <img src="https://i0.hdslb.com/bfs/garb/21798efc13b54ad5a887acbfe1bbc422e23965e0.png" alt="2233破界琴诗表情包" width="64"> | 2026/06/12 09:55 | 购买所得 |
 | `9903` | **2233笑月映空表情包** | <img src="https://i0.hdslb.com/bfs/garb/a1b307332fc29c556d461f3ee457018ff7497b79.png" alt="2233笑月映空表情包" width="64"> | 2026/06/12 09:55 | 购买所得 |
@@ -7416,6 +7421,7 @@ uv run scripts/update_emote_index.py --offline
 | `9918` | **FPX小凤凰表情包3.0** | <img src="https://i0.hdslb.com/bfs/garb/c9482902cd15ee3a6bdf3cc31f099859b95a2aa0.png" alt="FPX小凤凰表情包3.0" width="64"> | 2026/06/13 12:00 | 购买所得 |
 | `9919` | **名侦探光之美少女** | <img src="https://i0.hdslb.com/bfs/garb/eee71c689820db0bba94ffb479065016e6db5e8d.png" alt="名侦探光之美少女" width="64"> | 2026/06/13 18:01 | 购买所得 |
 | `9920` | **一陆同行** | <img src="https://i0.hdslb.com/bfs/garb/74a113051e44384b5c3ef6da422286cefe803b27.png" alt="一陆同行" width="64"> | 2026/06/13 19:01 | 购买所得 |
+| `9921` | **糖果精灵小喜** | <img src="https://i0.hdslb.com/bfs/garb/57b67aeb6c54dfe00fdd603c781bfd4d0360d49d.png" alt="糖果精灵小喜" width="64"> | 2026/06/15 11:01 | 购买所得 |
 
 </details>
 

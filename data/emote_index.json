@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-06-14T04:13:59Z",
-    "count": 7246,
+    "updated_at": "2026-06-15T03:22:49Z",
+    "count": 7247,
     "packages": [
         {
             "id": 1,
@@ -72258,8 +72258,8 @@
             "id": 9900,
             "name": "软喵动漫-西瓜冻冻（充电）",
             "preview_url": "https://i0.hdslb.com/bfs/garb/fe38b26c3b3db58e5e3d8f97d8b263ec2c4e6385.png",
-            "mtime": 1781163061,
-            "created_at": "2026/06/11 15:31",
+            "mtime": 1781432481,
+            "created_at": "2026/06/14 18:21",
             "type": 12,
             "type_label": "充电所得",
             "first_seen_at": "2026-06-14T04:13:04Z"
@@ -72463,6 +72463,16 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-06-14T04:13:04Z"
+        },
+        {
+            "id": 9921,
+            "name": "糖果精灵小喜",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/57b67aeb6c54dfe00fdd603c781bfd4d0360d49d.png",
+            "mtime": 1781492490,
+            "created_at": "2026/06/15 11:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-15T03:22:49Z"
         }
     ]
 }
