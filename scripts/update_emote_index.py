@@ -39,7 +39,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def utc_now() -> dt.datetime:
-    return dt.datetime.now(dt.UTC).replace(microsecond=0)
+    return dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
 
 
 def cookie_header() -> str | None:
@@ -290,14 +290,14 @@ def table_for_packages(packages: list[dict[str, Any]]) -> str:
 
 
 def recent_packages(
-    packages: list[dict[str, Any]], today: dt.date, recent_days: int
+    packages: list[dict[str, Any]], end_date: dt.date, recent_days: int
 ) -> dict[dt.date, list[dict[str, Any]]]:
-    earliest = today - dt.timedelta(days=recent_days - 1)
+    earliest = end_date - dt.timedelta(days=recent_days - 1)
     grouped: dict[dt.date, list[dict[str, Any]]] = {}
 
     for package in packages:
         date = mtime_date(package)
-        if date is None or date < earliest or date > today:
+        if date is None or date < earliest or date > end_date:
             continue
         grouped.setdefault(date, []).append(package)
 
@@ -307,16 +307,20 @@ def recent_packages(
     return dict(sorted(grouped.items(), reverse=True))
 
 
+def latest_complete_shanghai_date() -> dt.date:
+    return dt.datetime.now(SHANGHAI_TZ).date() - dt.timedelta(days=1)
+
+
 def build_generated_block(index: dict[str, Any], recent_days: int) -> str:
     packages = list(index["packages"])
-    today = dt.datetime.now(SHANGHAI_TZ).date()
-    recent = recent_packages(packages, today, recent_days)
+    end_date = latest_complete_shanghai_date()
+    recent = recent_packages(packages, end_date, recent_days)
 
     lines = [
         README_START,
         "<!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->",
         "",
-        f"## **最近 {recent_days} 天上新表情包**",
+        f"## **最近 {recent_days} 天上新表情包（截至北京时间 {end_date.strftime('%Y/%m/%d')}）**",
         "",
     ]
 

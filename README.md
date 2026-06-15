@@ -91,7 +91,7 @@ uv run scripts/update_emote_index.py --offline
 <!-- BILIBILI_EMOTE_INDEX_START -->
 <!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->
 
-## **最近 7 天上新表情包**
+## **最近 7 天上新表情包（截至北京时间 2026/06/14）**
 
 ### **2026/06/13**
 

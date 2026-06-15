@@ -2,8 +2,9 @@ name: Update emote index
 
 on:
   schedule:
-    # 每天 02:00（Asia/Shanghai）运行；GitHub Actions cron 使用 UTC。
-    - cron: "0 18 * * *"
+    # 每天 02:00（Asia/Shanghai）运行；脚本统计北京时间昨天及往前 7 天。
+    - cron: "0 2 * * *"
+      timezone: "Asia/Shanghai"
   workflow_dispatch:
 
 permissions:
