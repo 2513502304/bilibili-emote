@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-06-15T03:22:49Z",
-    "count": 7247,
+    "updated_at": "2026-06-15T20:55:33Z",
+    "count": 7255,
     "packages": [
         {
             "id": 1,
@@ -72473,6 +72473,86 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-06-15T03:22:49Z"
+        },
+        {
+            "id": 9922,
+            "name": "王宝煲收藏集·动态表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/1ecb66f1100a3f5143080c18f1e8243099cfdd21.png",
+            "mtime": 1781496361,
+            "created_at": "2026/06/15 12:06",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-15T20:55:33Z"
+        },
+        {
+            "id": 9924,
+            "name": "夜师傅情绪图鉴",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/acdca0dc28790121e350dca3384ae2353ff931bf.png",
+            "mtime": 1781496560,
+            "created_at": "2026/06/15 12:09",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-15T20:55:33Z"
+        },
+        {
+            "id": 9925,
+            "name": "xwu碳",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/bd757f5edff1380c4cecbac4ae79f5778198843f.png",
+            "mtime": 1781496800,
+            "created_at": "2026/06/15 12:13",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-15T20:55:33Z"
+        },
+        {
+            "id": 9926,
+            "name": "小猫乐队",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/6c6a2aada871854234d75b476f5a2e839b2883d7.png",
+            "mtime": 1781496830,
+            "created_at": "2026/06/15 12:13",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-15T20:55:33Z"
+        },
+        {
+            "id": 9927,
+            "name": "ENX叉叉酱（充电）",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/8b6dd4c874ce400cbae0294440fae830047b14db.png",
+            "mtime": 1781506227,
+            "created_at": "2026/06/15 14:50",
+            "type": 12,
+            "type_label": "充电所得",
+            "first_seen_at": "2026-06-15T20:55:33Z"
+        },
+        {
+            "id": 9928,
+            "name": "美代正式表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/237ee9877d5be72d7d329226c6253eaa2cd393a1.png",
+            "mtime": 1781520900,
+            "created_at": "2026/06/15 18:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-15T20:55:33Z"
+        },
+        {
+            "id": 9929,
+            "name": "一群小薇拉",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/981979a71304a36041914b84b8fb4303d1a35a09.png",
+            "mtime": 1781521201,
+            "created_at": "2026/06/15 19:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-15T20:55:33Z"
+        },
+        {
+            "id": 9930,
+            "name": "敛云烟·繁华尽处",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/e1fcf7add58bf19260d5a29764e6827705885582.png",
+            "mtime": 1781524500,
+            "created_at": "2026/06/15 19:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-15T20:55:33Z"
         }
     ]
 }

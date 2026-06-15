@@ -91,7 +91,21 @@ uv run scripts/update_emote_index.py --offline
 <!-- BILIBILI_EMOTE_INDEX_START -->
 <!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->
 
-## **最近 7 天上新表情包（截至北京时间 2026/06/14）**
+## **最近 7 天上新表情包（截至北京时间 2026/06/15）**
+
+### **2026/06/15**
+
+| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
+| :---: | --- | :---: | :---: | :---: |
+| `9930` | **敛云烟·繁华尽处** | <img src="https://i0.hdslb.com/bfs/garb/e1fcf7add58bf19260d5a29764e6827705885582.png" alt="敛云烟·繁华尽处" width="64"> | 2026/06/15 19:55 | 购买所得 |
+| `9929` | **一群小薇拉** | <img src="https://i0.hdslb.com/bfs/garb/981979a71304a36041914b84b8fb4303d1a35a09.png" alt="一群小薇拉" width="64"> | 2026/06/15 19:00 | 购买所得 |
+| `9928` | **美代正式表情包** | <img src="https://i0.hdslb.com/bfs/garb/237ee9877d5be72d7d329226c6253eaa2cd393a1.png" alt="美代正式表情包" width="64"> | 2026/06/15 18:55 | 购买所得 |
+| `9927` | **ENX叉叉酱（充电）** | <img src="https://i0.hdslb.com/bfs/garb/8b6dd4c874ce400cbae0294440fae830047b14db.png" alt="ENX叉叉酱（充电）" width="64"> | 2026/06/15 14:50 | 充电所得 |
+| `9926` | **小猫乐队** | <img src="https://i0.hdslb.com/bfs/garb/6c6a2aada871854234d75b476f5a2e839b2883d7.png" alt="小猫乐队" width="64"> | 2026/06/15 12:13 | 购买所得 |
+| `9925` | **xwu碳** | <img src="https://i0.hdslb.com/bfs/garb/bd757f5edff1380c4cecbac4ae79f5778198843f.png" alt="xwu碳" width="64"> | 2026/06/15 12:13 | 购买所得 |
+| `9924` | **夜师傅情绪图鉴** | <img src="https://i0.hdslb.com/bfs/garb/acdca0dc28790121e350dca3384ae2353ff931bf.png" alt="夜师傅情绪图鉴" width="64"> | 2026/06/15 12:09 | 购买所得 |
+| `9922` | **王宝煲收藏集·动态表情包** | <img src="https://i0.hdslb.com/bfs/garb/1ecb66f1100a3f5143080c18f1e8243099cfdd21.png" alt="王宝煲收藏集·动态表情包" width="64"> | 2026/06/15 12:06 | 购买所得 |
+| `9921` | **糖果精灵小喜** | <img src="https://i0.hdslb.com/bfs/garb/57b67aeb6c54dfe00fdd603c781bfd4d0360d49d.png" alt="糖果精灵小喜" width="64"> | 2026/06/15 11:01 | 购买所得 |
 
 ### **2026/06/14**
 
@@ -159,19 +173,12 @@ uv run scripts/update_emote_index.py --offline
 | `9887` | **麻薯波比呀（充电）** | <img src="https://i0.hdslb.com/bfs/garb/530c16a686faf52d4fec7b8f35dd1c067f074a3c.png" alt="麻薯波比呀（充电）" width="64"> | 2026/06/09 18:35 | 充电所得 |
 | `9886` | **FsF表情包** | <img src="https://i0.hdslb.com/bfs/garb/4ea8199742f2274094f19e0cb0c8513b5af44c46.png" alt="FsF表情包" width="64"> | 2026/06/09 12:01 | 购买所得 |
 
-### **2026/06/08**
-
-| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| :---: | --- | :---: | :---: | :---: |
-| `9885` | **破碎的祈愿表情包** | <img src="https://i0.hdslb.com/bfs/garb/e0b1c47106de5c712ffd71395b9c42833aa35afc.png" alt="破碎的祈愿表情包" width="64"> | 2026/06/08 18:01 | 购买所得 |
-| `9884` | **喵桑 咪梦点点** | <img src="https://i0.hdslb.com/bfs/garb/7e701769619bfe1e205ad85a9a988eaed7efa003.png" alt="喵桑 咪梦点点" width="64"> | 2026/06/08 16:17 | 购买所得 |
-
 ---
 
 ## **全部表情包索引**
 
 <details>
-<summary>展开全部 7247 个表情包预览 URL</summary>
+<summary>展开全部 7255 个表情包预览 URL</summary>
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
 | :---: | --- | :---: | :---: | :---: |
@@ -7422,6 +7429,14 @@ uv run scripts/update_emote_index.py --offline
 | `9919` | **名侦探光之美少女** | <img src="https://i0.hdslb.com/bfs/garb/eee71c689820db0bba94ffb479065016e6db5e8d.png" alt="名侦探光之美少女" width="64"> | 2026/06/13 18:01 | 购买所得 |
 | `9920` | **一陆同行** | <img src="https://i0.hdslb.com/bfs/garb/74a113051e44384b5c3ef6da422286cefe803b27.png" alt="一陆同行" width="64"> | 2026/06/13 19:01 | 购买所得 |
 | `9921` | **糖果精灵小喜** | <img src="https://i0.hdslb.com/bfs/garb/57b67aeb6c54dfe00fdd603c781bfd4d0360d49d.png" alt="糖果精灵小喜" width="64"> | 2026/06/15 11:01 | 购买所得 |
+| `9922` | **王宝煲收藏集·动态表情包** | <img src="https://i0.hdslb.com/bfs/garb/1ecb66f1100a3f5143080c18f1e8243099cfdd21.png" alt="王宝煲收藏集·动态表情包" width="64"> | 2026/06/15 12:06 | 购买所得 |
+| `9924` | **夜师傅情绪图鉴** | <img src="https://i0.hdslb.com/bfs/garb/acdca0dc28790121e350dca3384ae2353ff931bf.png" alt="夜师傅情绪图鉴" width="64"> | 2026/06/15 12:09 | 购买所得 |
+| `9925` | **xwu碳** | <img src="https://i0.hdslb.com/bfs/garb/bd757f5edff1380c4cecbac4ae79f5778198843f.png" alt="xwu碳" width="64"> | 2026/06/15 12:13 | 购买所得 |
+| `9926` | **小猫乐队** | <img src="https://i0.hdslb.com/bfs/garb/6c6a2aada871854234d75b476f5a2e839b2883d7.png" alt="小猫乐队" width="64"> | 2026/06/15 12:13 | 购买所得 |
+| `9927` | **ENX叉叉酱（充电）** | <img src="https://i0.hdslb.com/bfs/garb/8b6dd4c874ce400cbae0294440fae830047b14db.png" alt="ENX叉叉酱（充电）" width="64"> | 2026/06/15 14:50 | 充电所得 |
+| `9928` | **美代正式表情包** | <img src="https://i0.hdslb.com/bfs/garb/237ee9877d5be72d7d329226c6253eaa2cd393a1.png" alt="美代正式表情包" width="64"> | 2026/06/15 18:55 | 购买所得 |
+| `9929` | **一群小薇拉** | <img src="https://i0.hdslb.com/bfs/garb/981979a71304a36041914b84b8fb4303d1a35a09.png" alt="一群小薇拉" width="64"> | 2026/06/15 19:00 | 购买所得 |
+| `9930` | **敛云烟·繁华尽处** | <img src="https://i0.hdslb.com/bfs/garb/e1fcf7add58bf19260d5a29764e6827705885582.png" alt="敛云烟·繁华尽处" width="64"> | 2026/06/15 19:55 | 购买所得 |
 
 </details>
 
