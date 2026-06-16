@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-06-15T20:55:33Z",
-    "count": 7255,
+    "updated_at": "2026-06-16T20:51:29Z",
+    "count": 7260,
     "packages": [
         {
             "id": 1,
@@ -72553,6 +72553,56 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-06-15T20:55:33Z"
+        },
+        {
+            "id": 9931,
+            "name": "荔枝困表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/fabb4e9be1d0f519fb5d483b6b80a7aeaba6b53d.png",
+            "mtime": 1781582100,
+            "created_at": "2026/06/16 11:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-16T20:51:29Z"
+        },
+        {
+            "id": 9932,
+            "name": "冰霜·神楽夢雪",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/8a73c464af3ebb423c070e633ee1cae2284125ed.png",
+            "mtime": 1781582100,
+            "created_at": "2026/06/16 11:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-16T20:51:29Z"
+        },
+        {
+            "id": 9933,
+            "name": "阿根廷国家队",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/5d28510f9413724eec04fe9c1a87933abe7cf675.png",
+            "mtime": 1781600461,
+            "created_at": "2026/06/16 17:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-16T20:51:29Z"
+        },
+        {
+            "id": 9934,
+            "name": "入間綠2.0",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/f7de0741a7cc3d34428e11d4fd7b2aa30e931a5a.png",
+            "mtime": 1781610900,
+            "created_at": "2026/06/16 19:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-16T20:51:29Z"
+        },
+        {
+            "id": 9935,
+            "name": "万花知收藏集·表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/3f91ad89f329b559441761990d4dc97dcf9b346b.png",
+            "mtime": 1781611201,
+            "created_at": "2026/06/16 20:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-16T20:51:29Z"
         }
     ]
 }

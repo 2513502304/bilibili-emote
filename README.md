@@ -91,7 +91,17 @@ uv run scripts/update_emote_index.py --offline
 <!-- BILIBILI_EMOTE_INDEX_START -->
 <!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->
 
-## **最近 7 天上新表情包（截至北京时间 2026/06/15）**
+## **最近 7 天上新表情包（截至北京时间 2026/06/16）**
+
+### **2026/06/16**
+
+| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
+| :---: | --- | :---: | :---: | :---: |
+| `9935` | **万花知收藏集·表情包** | <img src="https://i0.hdslb.com/bfs/garb/3f91ad89f329b559441761990d4dc97dcf9b346b.png" alt="万花知收藏集·表情包" width="64"> | 2026/06/16 20:00 | 购买所得 |
+| `9934` | **入間綠2.0** | <img src="https://i0.hdslb.com/bfs/garb/f7de0741a7cc3d34428e11d4fd7b2aa30e931a5a.png" alt="入間綠2.0" width="64"> | 2026/06/16 19:55 | 购买所得 |
+| `9933` | **阿根廷国家队** | <img src="https://i0.hdslb.com/bfs/garb/5d28510f9413724eec04fe9c1a87933abe7cf675.png" alt="阿根廷国家队" width="64"> | 2026/06/16 17:01 | 购买所得 |
+| `9931` | **荔枝困表情包** | <img src="https://i0.hdslb.com/bfs/garb/fabb4e9be1d0f519fb5d483b6b80a7aeaba6b53d.png" alt="荔枝困表情包" width="64"> | 2026/06/16 11:55 | 购买所得 |
+| `9932` | **冰霜·神楽夢雪** | <img src="https://i0.hdslb.com/bfs/garb/8a73c464af3ebb423c070e633ee1cae2284125ed.png" alt="冰霜·神楽夢雪" width="64"> | 2026/06/16 11:55 | 购买所得 |
 
 ### **2026/06/15**
 
@@ -165,20 +175,12 @@ uv run scripts/update_emote_index.py --offline
 | `1844` | **恬欣欣的成长日记（充电）** | <img src="https://i0.hdslb.com/bfs/garb/b88a98489ae3cd1ec3832b9c352a1223d3b0092d.png" alt="恬欣欣的成长日记（充电）" width="64"> | 2026/06/10 09:29 | 充电所得 |
 | `9889` | **白诗南_ivy（充电）** | <img src="https://i0.hdslb.com/bfs/garb/23c03b12862b9d3d7f1f3fd6f1d3545355d46854.png" alt="白诗南_ivy（充电）" width="64"> | 2026/06/10 03:39 | 充电所得 |
 
-### **2026/06/09**
-
-| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| :---: | --- | :---: | :---: | :---: |
-| `9888` | **小狐做个好梦** | <img src="https://i0.hdslb.com/bfs/garb/e1dbbf93f2abdd8de3453fbb3bccb55b054da384.png" alt="小狐做个好梦" width="64"> | 2026/06/09 19:55 | 购买所得 |
-| `9887` | **麻薯波比呀（充电）** | <img src="https://i0.hdslb.com/bfs/garb/530c16a686faf52d4fec7b8f35dd1c067f074a3c.png" alt="麻薯波比呀（充电）" width="64"> | 2026/06/09 18:35 | 充电所得 |
-| `9886` | **FsF表情包** | <img src="https://i0.hdslb.com/bfs/garb/4ea8199742f2274094f19e0cb0c8513b5af44c46.png" alt="FsF表情包" width="64"> | 2026/06/09 12:01 | 购买所得 |
-
 ---
 
 ## **全部表情包索引**
 
 <details>
-<summary>展开全部 7255 个表情包预览 URL</summary>
+<summary>展开全部 7260 个表情包预览 URL</summary>
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
 | :---: | --- | :---: | :---: | :---: |
@@ -7437,6 +7439,11 @@ uv run scripts/update_emote_index.py --offline
 | `9928` | **美代正式表情包** | <img src="https://i0.hdslb.com/bfs/garb/237ee9877d5be72d7d329226c6253eaa2cd393a1.png" alt="美代正式表情包" width="64"> | 2026/06/15 18:55 | 购买所得 |
 | `9929` | **一群小薇拉** | <img src="https://i0.hdslb.com/bfs/garb/981979a71304a36041914b84b8fb4303d1a35a09.png" alt="一群小薇拉" width="64"> | 2026/06/15 19:00 | 购买所得 |
 | `9930` | **敛云烟·繁华尽处** | <img src="https://i0.hdslb.com/bfs/garb/e1fcf7add58bf19260d5a29764e6827705885582.png" alt="敛云烟·繁华尽处" width="64"> | 2026/06/15 19:55 | 购买所得 |
+| `9931` | **荔枝困表情包** | <img src="https://i0.hdslb.com/bfs/garb/fabb4e9be1d0f519fb5d483b6b80a7aeaba6b53d.png" alt="荔枝困表情包" width="64"> | 2026/06/16 11:55 | 购买所得 |
+| `9932` | **冰霜·神楽夢雪** | <img src="https://i0.hdslb.com/bfs/garb/8a73c464af3ebb423c070e633ee1cae2284125ed.png" alt="冰霜·神楽夢雪" width="64"> | 2026/06/16 11:55 | 购买所得 |
+| `9933` | **阿根廷国家队** | <img src="https://i0.hdslb.com/bfs/garb/5d28510f9413724eec04fe9c1a87933abe7cf675.png" alt="阿根廷国家队" width="64"> | 2026/06/16 17:01 | 购买所得 |
+| `9934` | **入間綠2.0** | <img src="https://i0.hdslb.com/bfs/garb/f7de0741a7cc3d34428e11d4fd7b2aa30e931a5a.png" alt="入間綠2.0" width="64"> | 2026/06/16 19:55 | 购买所得 |
+| `9935` | **万花知收藏集·表情包** | <img src="https://i0.hdslb.com/bfs/garb/3f91ad89f329b559441761990d4dc97dcf9b346b.png" alt="万花知收藏集·表情包" width="64"> | 2026/06/16 20:00 | 购买所得 |
 
 </details>
 
