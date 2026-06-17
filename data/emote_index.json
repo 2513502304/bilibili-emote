@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-06-16T20:51:29Z",
-    "count": 7260,
+    "updated_at": "2026-06-17T20:12:17Z",
+    "count": 7270,
     "packages": [
         {
             "id": 1,
@@ -72603,6 +72603,106 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-06-16T20:51:29Z"
+        },
+        {
+            "id": 9936,
+            "name": "卡绒_Charon表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/cfdf38f717156d8fcb1e19e31237beacd1ea234e.png",
+            "mtime": 1781668500,
+            "created_at": "2026/06/17 11:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-17T20:12:17Z"
+        },
+        {
+            "id": 9937,
+            "name": "小花仙心跳电波系列",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/723b07de21c0d62467146597e7eb90aee0ba7733.png",
+            "mtime": 1781681401,
+            "created_at": "2026/06/17 15:30",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-17T20:12:17Z"
+        },
+        {
+            "id": 9938,
+            "name": "新兔少女",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/e091bf55de15cd6ad7387c8c5771cceff28595f4.png",
+            "mtime": 1781681521,
+            "created_at": "2026/06/17 15:32",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-17T20:12:17Z"
+        },
+        {
+            "id": 9939,
+            "name": "校园小萌粒",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/8a7bc2be5ce30dfe6c8b6e154499d7f820c7d458.png",
+            "mtime": 1781681960,
+            "created_at": "2026/06/17 15:39",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-17T20:12:17Z"
+        },
+        {
+            "id": 9940,
+            "name": "路人超能100表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/f6cccbab475cf827442cd71b2a7c13f282934ac2.png",
+            "mtime": 1781686801,
+            "created_at": "2026/06/17 17:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-17T20:12:17Z"
+        },
+        {
+            "id": 9941,
+            "name": "星尘猫猫",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/ad6866d3291a6642848fba64a8b271231bc6c228.png",
+            "mtime": 1781690100,
+            "created_at": "2026/06/17 17:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-17T20:12:17Z"
+        },
+        {
+            "id": 9942,
+            "name": "酸柚粥",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/f6018192040eceec8cc92b48609ca8c7409973d3.png",
+            "mtime": 1781693700,
+            "created_at": "2026/06/17 18:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-17T20:12:17Z"
+        },
+        {
+            "id": 9943,
+            "name": "DOAXVV第二弹",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/d329dbecaf395cb180c23f2eca3a7b2e20f85469.png",
+            "mtime": 1781694001,
+            "created_at": "2026/06/17 19:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-17T20:12:17Z"
+        },
+        {
+            "id": 9944,
+            "name": "一陆同行动态表情",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/96d5d23801c5e763830285d506867a6bc11790b8.png",
+            "mtime": 1781694001,
+            "created_at": "2026/06/17 19:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-17T20:12:17Z"
+        },
+        {
+            "id": 9945,
+            "name": "快乐的生活表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/f9d3319c2ed9d26b2f40d4253ebbfcfda42ffd61.png",
+            "mtime": 1781701261,
+            "created_at": "2026/06/17 21:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-17T20:12:17Z"
         }
     ]
 }

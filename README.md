@@ -91,7 +91,22 @@ uv run scripts/update_emote_index.py --offline
 <!-- BILIBILI_EMOTE_INDEX_START -->
 <!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->
 
-## **最近 7 天上新表情包（截至北京时间 2026/06/16）**
+## **最近 7 天上新表情包（截至北京时间 2026/06/17）**
+
+### **2026/06/17**
+
+| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
+| :---: | --- | :---: | :---: | :---: |
+| `9945` | **快乐的生活表情包** | <img src="https://i0.hdslb.com/bfs/garb/f9d3319c2ed9d26b2f40d4253ebbfcfda42ffd61.png" alt="快乐的生活表情包" width="64"> | 2026/06/17 21:01 | 购买所得 |
+| `9943` | **DOAXVV第二弹** | <img src="https://i0.hdslb.com/bfs/garb/d329dbecaf395cb180c23f2eca3a7b2e20f85469.png" alt="DOAXVV第二弹" width="64"> | 2026/06/17 19:00 | 购买所得 |
+| `9944` | **一陆同行动态表情** | <img src="https://i0.hdslb.com/bfs/garb/96d5d23801c5e763830285d506867a6bc11790b8.png" alt="一陆同行动态表情" width="64"> | 2026/06/17 19:00 | 购买所得 |
+| `9942` | **酸柚粥** | <img src="https://i0.hdslb.com/bfs/garb/f6018192040eceec8cc92b48609ca8c7409973d3.png" alt="酸柚粥" width="64"> | 2026/06/17 18:55 | 购买所得 |
+| `9941` | **星尘猫猫** | <img src="https://i0.hdslb.com/bfs/garb/ad6866d3291a6642848fba64a8b271231bc6c228.png" alt="星尘猫猫" width="64"> | 2026/06/17 17:55 | 购买所得 |
+| `9940` | **路人超能100表情包** | <img src="https://i0.hdslb.com/bfs/garb/f6cccbab475cf827442cd71b2a7c13f282934ac2.png" alt="路人超能100表情包" width="64"> | 2026/06/17 17:00 | 购买所得 |
+| `9939` | **校园小萌粒** | <img src="https://i0.hdslb.com/bfs/garb/8a7bc2be5ce30dfe6c8b6e154499d7f820c7d458.png" alt="校园小萌粒" width="64"> | 2026/06/17 15:39 | 购买所得 |
+| `9938` | **新兔少女** | <img src="https://i0.hdslb.com/bfs/garb/e091bf55de15cd6ad7387c8c5771cceff28595f4.png" alt="新兔少女" width="64"> | 2026/06/17 15:32 | 购买所得 |
+| `9937` | **小花仙心跳电波系列** | <img src="https://i0.hdslb.com/bfs/garb/723b07de21c0d62467146597e7eb90aee0ba7733.png" alt="小花仙心跳电波系列" width="64"> | 2026/06/17 15:30 | 购买所得 |
+| `9936` | **卡绒_Charon表情包** | <img src="https://i0.hdslb.com/bfs/garb/cfdf38f717156d8fcb1e19e31237beacd1ea234e.png" alt="卡绒_Charon表情包" width="64"> | 2026/06/17 11:55 | 购买所得 |
 
 ### **2026/06/16**
 
@@ -163,24 +178,12 @@ uv run scripts/update_emote_index.py --offline
 | `9896` | **破碎猫 爱自己** | <img src="https://i0.hdslb.com/bfs/garb/6daa0f58f821f6443246f49c273fbeeb2c5534ad.png" alt="破碎猫 爱自己" width="64"> | 2026/06/11 14:20 | 购买所得 |
 | `9895` | **浪猫呀·漫游少年** | <img src="https://i0.hdslb.com/bfs/garb/16c26e63c61bdbd087abd1af3719a7e3e8c697e8.png" alt="浪猫呀·漫游少年" width="64"> | 2026/06/11 11:55 | 购买所得 |
 
-### **2026/06/10**
-
-| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| :---: | --- | :---: | :---: | :---: |
-| `9894` | **土豪小姐姐表情包** | <img src="https://i0.hdslb.com/bfs/garb/d5131414f8a3fa8cb426ecb5e3da5e56e3a7fcce.png" alt="土豪小姐姐表情包" width="64"> | 2026/06/10 21:04 | 购买所得 |
-| `9893` | **黑客33表情包** | <img src="https://i0.hdslb.com/bfs/garb/464b7aa098d5407208ce417ce68a11fe6463d150.png" alt="黑客33表情包" width="64"> | 2026/06/10 21:04 | 购买所得 |
-| `9892` | **月光怪盗22表情包** | <img src="https://i0.hdslb.com/bfs/garb/5424acfd8a568cf63bf982257ad7b9c99755396d.png" alt="月光怪盗22表情包" width="64"> | 2026/06/10 21:03 | 购买所得 |
-| `9891` | **暗夜猫咪表情包** | <img src="https://i0.hdslb.com/bfs/garb/f32e56618ebe1275e82740afd00ea85eb09cfec1.png" alt="暗夜猫咪表情包" width="64"> | 2026/06/10 20:56 | 购买所得 |
-| `9890` | **希尔薇Sylvie** | <img src="https://i0.hdslb.com/bfs/garb/13cdcaca1eda6a786bd420ec9af645ce9886823b.png" alt="希尔薇Sylvie" width="64"> | 2026/06/10 19:55 | 购买所得 |
-| `1844` | **恬欣欣的成长日记（充电）** | <img src="https://i0.hdslb.com/bfs/garb/b88a98489ae3cd1ec3832b9c352a1223d3b0092d.png" alt="恬欣欣的成长日记（充电）" width="64"> | 2026/06/10 09:29 | 充电所得 |
-| `9889` | **白诗南_ivy（充电）** | <img src="https://i0.hdslb.com/bfs/garb/23c03b12862b9d3d7f1f3fd6f1d3545355d46854.png" alt="白诗南_ivy（充电）" width="64"> | 2026/06/10 03:39 | 充电所得 |
-
 ---
 
 ## **全部表情包索引**
 
 <details>
-<summary>展开全部 7260 个表情包预览 URL</summary>
+<summary>展开全部 7270 个表情包预览 URL</summary>
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
 | :---: | --- | :---: | :---: | :---: |
@@ -7444,6 +7447,16 @@ uv run scripts/update_emote_index.py --offline
 | `9933` | **阿根廷国家队** | <img src="https://i0.hdslb.com/bfs/garb/5d28510f9413724eec04fe9c1a87933abe7cf675.png" alt="阿根廷国家队" width="64"> | 2026/06/16 17:01 | 购买所得 |
 | `9934` | **入間綠2.0** | <img src="https://i0.hdslb.com/bfs/garb/f7de0741a7cc3d34428e11d4fd7b2aa30e931a5a.png" alt="入間綠2.0" width="64"> | 2026/06/16 19:55 | 购买所得 |
 | `9935` | **万花知收藏集·表情包** | <img src="https://i0.hdslb.com/bfs/garb/3f91ad89f329b559441761990d4dc97dcf9b346b.png" alt="万花知收藏集·表情包" width="64"> | 2026/06/16 20:00 | 购买所得 |
+| `9936` | **卡绒_Charon表情包** | <img src="https://i0.hdslb.com/bfs/garb/cfdf38f717156d8fcb1e19e31237beacd1ea234e.png" alt="卡绒_Charon表情包" width="64"> | 2026/06/17 11:55 | 购买所得 |
+| `9937` | **小花仙心跳电波系列** | <img src="https://i0.hdslb.com/bfs/garb/723b07de21c0d62467146597e7eb90aee0ba7733.png" alt="小花仙心跳电波系列" width="64"> | 2026/06/17 15:30 | 购买所得 |
+| `9938` | **新兔少女** | <img src="https://i0.hdslb.com/bfs/garb/e091bf55de15cd6ad7387c8c5771cceff28595f4.png" alt="新兔少女" width="64"> | 2026/06/17 15:32 | 购买所得 |
+| `9939` | **校园小萌粒** | <img src="https://i0.hdslb.com/bfs/garb/8a7bc2be5ce30dfe6c8b6e154499d7f820c7d458.png" alt="校园小萌粒" width="64"> | 2026/06/17 15:39 | 购买所得 |
+| `9940` | **路人超能100表情包** | <img src="https://i0.hdslb.com/bfs/garb/f6cccbab475cf827442cd71b2a7c13f282934ac2.png" alt="路人超能100表情包" width="64"> | 2026/06/17 17:00 | 购买所得 |
+| `9941` | **星尘猫猫** | <img src="https://i0.hdslb.com/bfs/garb/ad6866d3291a6642848fba64a8b271231bc6c228.png" alt="星尘猫猫" width="64"> | 2026/06/17 17:55 | 购买所得 |
+| `9942` | **酸柚粥** | <img src="https://i0.hdslb.com/bfs/garb/f6018192040eceec8cc92b48609ca8c7409973d3.png" alt="酸柚粥" width="64"> | 2026/06/17 18:55 | 购买所得 |
+| `9943` | **DOAXVV第二弹** | <img src="https://i0.hdslb.com/bfs/garb/d329dbecaf395cb180c23f2eca3a7b2e20f85469.png" alt="DOAXVV第二弹" width="64"> | 2026/06/17 19:00 | 购买所得 |
+| `9944` | **一陆同行动态表情** | <img src="https://i0.hdslb.com/bfs/garb/96d5d23801c5e763830285d506867a6bc11790b8.png" alt="一陆同行动态表情" width="64"> | 2026/06/17 19:00 | 购买所得 |
+| `9945` | **快乐的生活表情包** | <img src="https://i0.hdslb.com/bfs/garb/f9d3319c2ed9d26b2f40d4253ebbfcfda42ffd61.png" alt="快乐的生活表情包" width="64"> | 2026/06/17 21:01 | 购买所得 |
 
 </details>
 
