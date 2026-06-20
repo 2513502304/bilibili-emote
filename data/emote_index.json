@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-06-20T02:44:50Z",
-    "count": 7285,
+    "updated_at": "2026-06-20T19:26:28Z",
+    "count": 7288,
     "packages": [
         {
             "id": 1,
@@ -72853,6 +72853,36 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9962,
+            "name": "青猪表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/00767b02c2a9fa178e8d7731f45587eb22629579.png",
+            "mtime": 1781946061,
+            "created_at": "2026/06/20 17:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T19:26:28Z"
+        },
+        {
+            "id": 9963,
+            "name": "夏烟装扮表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/0cd5d4225b5eb44497f570fef976a5b55f73b6b5.png",
+            "mtime": 1781956500,
+            "created_at": "2026/06/20 19:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T19:26:28Z"
+        },
+        {
+            "id": 9964,
+            "name": "万花知收藏集·动态表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/0da5a77a29dcf527796105c840a7ee79dc3b66fa.png",
+            "mtime": 1781956801,
+            "created_at": "2026/06/20 20:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T19:26:28Z"
         }
     ]
 }

@@ -91,7 +91,15 @@ uv run scripts/update_emote_index.py --offline
 <!-- BILIBILI_EMOTE_INDEX_START -->
 <!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->
 
-## **最近 7 天上新表情包（截至北京时间 2026/06/19）**
+## **最近 7 天上新表情包（截至北京时间 2026/06/20）**
+
+### **2026/06/20**
+
+| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
+| :---: | --- | :---: | :---: | :---: |
+| `9964` | **万花知收藏集·动态表情包** | <img src="https://i0.hdslb.com/bfs/garb/0da5a77a29dcf527796105c840a7ee79dc3b66fa.png" alt="万花知收藏集·动态表情包" width="64"> | 2026/06/20 20:00 | 购买所得 |
+| `9963` | **夏烟装扮表情包** | <img src="https://i0.hdslb.com/bfs/garb/0cd5d4225b5eb44497f570fef976a5b55f73b6b5.png" alt="夏烟装扮表情包" width="64"> | 2026/06/20 19:55 | 购买所得 |
+| `9962` | **青猪表情包** | <img src="https://i0.hdslb.com/bfs/garb/00767b02c2a9fa178e8d7731f45587eb22629579.png" alt="青猪表情包" width="64"> | 2026/06/20 17:01 | 购买所得 |
 
 ### **2026/06/19**
 
@@ -163,21 +171,12 @@ uv run scripts/update_emote_index.py --offline
 | :---: | --- | :---: | :---: | :---: |
 | `9900` | **软喵动漫-西瓜冻冻（充电）** | <img src="https://i0.hdslb.com/bfs/garb/fe38b26c3b3db58e5e3d8f97d8b263ec2c4e6385.png" alt="软喵动漫-西瓜冻冻（充电）" width="64"> | 2026/06/14 18:21 | 充电所得 |
 
-### **2026/06/13**
-
-| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| :---: | --- | :---: | :---: | :---: |
-| `9920` | **一陆同行** | <img src="https://i0.hdslb.com/bfs/garb/74a113051e44384b5c3ef6da422286cefe803b27.png" alt="一陆同行" width="64"> | 2026/06/13 19:01 | 购买所得 |
-| `9919` | **名侦探光之美少女** | <img src="https://i0.hdslb.com/bfs/garb/eee71c689820db0bba94ffb479065016e6db5e8d.png" alt="名侦探光之美少女" width="64"> | 2026/06/13 18:01 | 购买所得 |
-| `8481` | **白粥动画（充电）** | <img src="https://i0.hdslb.com/bfs/garb/c127347539241935f6e5a13435f3f98af511512c.png" alt="白粥动画（充电）" width="64"> | 2026/06/13 17:54 | 充电所得 |
-| `9918` | **FPX小凤凰表情包3.0** | <img src="https://i0.hdslb.com/bfs/garb/c9482902cd15ee3a6bdf3cc31f099859b95a2aa0.png" alt="FPX小凤凰表情包3.0" width="64"> | 2026/06/13 12:00 | 购买所得 |
-
 ---
 
 ## **全部表情包索引**
 
 <details>
-<summary>展开全部 7285 个表情包预览 URL</summary>
+<summary>展开全部 7288 个表情包预览 URL</summary>
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
 | :---: | --- | :---: | :---: | :---: |
@@ -7466,6 +7465,9 @@ uv run scripts/update_emote_index.py --offline
 | `9959` | **墨点汪** | <img src="https://i0.hdslb.com/bfs/garb/a546d7b297c690319b1cbc237289662974e5e7c4.png" alt="墨点汪" width="64"> | 2026/06/19 18:55 | 购买所得 |
 | `9960` | **烛宝镭射双生子表情包** | <img src="https://i0.hdslb.com/bfs/garb/e20a1ec46db6206ef2dc04bb0b0509363642275d.png" alt="烛宝镭射双生子表情包" width="64"> | 2026/06/19 19:00 | 购买所得 |
 | `9961` | **莱福黑石大明星** | <img src="https://i0.hdslb.com/bfs/garb/9c5d356711504675238a1469a748bce448157a2d.png" alt="莱福黑石大明星" width="64"> | 2026/06/19 19:01 | 购买所得 |
+| `9962` | **青猪表情包** | <img src="https://i0.hdslb.com/bfs/garb/00767b02c2a9fa178e8d7731f45587eb22629579.png" alt="青猪表情包" width="64"> | 2026/06/20 17:01 | 购买所得 |
+| `9963` | **夏烟装扮表情包** | <img src="https://i0.hdslb.com/bfs/garb/0cd5d4225b5eb44497f570fef976a5b55f73b6b5.png" alt="夏烟装扮表情包" width="64"> | 2026/06/20 19:55 | 购买所得 |
+| `9964` | **万花知收藏集·动态表情包** | <img src="https://i0.hdslb.com/bfs/garb/0da5a77a29dcf527796105c840a7ee79dc3b66fa.png" alt="万花知收藏集·动态表情包" width="64"> | 2026/06/20 20:00 | 购买所得 |
 
 </details>
 
