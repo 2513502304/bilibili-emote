@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-06-17T20:12:17Z",
-    "count": 7270,
+    "updated_at": "2026-06-20T02:44:50Z",
+    "count": 7285,
     "packages": [
         {
             "id": 1,
@@ -72703,6 +72703,156 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-06-17T20:12:17Z"
+        },
+        {
+            "id": 9946,
+            "name": "九方唯芳",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/34d745e1206e63bde1efedff9cbd177106afd2ad.png",
+            "mtime": 1781747700,
+            "created_at": "2026/06/18 09:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9947,
+            "name": "DJMAX动态表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/76d0aff39bf115f7f24bfd9b9c43eeffeea9628f.png",
+            "mtime": 1781748061,
+            "created_at": "2026/06/18 10:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9948,
+            "name": "DJMAX静态表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/1822c60d95c1a70b82019b22e483dc302cfa5bf3.png",
+            "mtime": 1781748061,
+            "created_at": "2026/06/18 10:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9949,
+            "name": "Kitsune泛星际报（充电）",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/efe4d25fdbaf8ffa857553ced3d5b3d54db0a56f.png",
+            "mtime": 1781754818,
+            "created_at": "2026/06/18 11:53",
+            "type": 12,
+            "type_label": "充电所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9950,
+            "name": "雾岛眠nemuri",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/e58f923cb6b16d96e61eb9ee7e273aa6fcbf3a6b.png",
+            "mtime": 1781754900,
+            "created_at": "2026/06/18 11:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9951,
+            "name": "BW2026 表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/f317e47140a0df41d2dd6719da2d8b563fcfa8f9.png",
+            "mtime": 1781755201,
+            "created_at": "2026/06/18 12:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9952,
+            "name": "天玉动画（充电）",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/3e9d1c2214698d63bc43e511ff2a1f5653e3a949.png",
+            "mtime": 1781761377,
+            "created_at": "2026/06/18 13:42",
+            "type": 12,
+            "type_label": "充电所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9953,
+            "name": "海盐雪糕小猫烧",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/e2ecc0bd5f4be301090af7c1b42e218b21d4fbba.png",
+            "mtime": 1781783700,
+            "created_at": "2026/06/18 19:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9954,
+            "name": "解集",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/e48d8b97b50126c7ead90993bddd48718e83be76.png",
+            "mtime": 1781791120,
+            "created_at": "2026/06/18 21:58",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9956,
+            "name": "瑾瑜_kilo（充电）",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/794f7c463c4c88abc1840dac11583adf57749971.png",
+            "mtime": 1781844321,
+            "created_at": "2026/06/19 12:45",
+            "type": 12,
+            "type_label": "充电所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9957,
+            "name": "局长收藏集第二弹动态表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/8eac2db46fb85c6b1cdeaf37e8d93f6eae5e543f.png",
+            "mtime": 1781863201,
+            "created_at": "2026/06/19 18:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9958,
+            "name": "薰风花海",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/30ddb13ac87cbf3770ec8cc8a8581b26ab5c9e30.png",
+            "mtime": 1781866501,
+            "created_at": "2026/06/19 18:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9959,
+            "name": "墨点汪",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/a546d7b297c690319b1cbc237289662974e5e7c4.png",
+            "mtime": 1781866501,
+            "created_at": "2026/06/19 18:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9960,
+            "name": "烛宝镭射双生子表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/e20a1ec46db6206ef2dc04bb0b0509363642275d.png",
+            "mtime": 1781866801,
+            "created_at": "2026/06/19 19:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
+        },
+        {
+            "id": 9961,
+            "name": "莱福黑石大明星",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/9c5d356711504675238a1469a748bce448157a2d.png",
+            "mtime": 1781866861,
+            "created_at": "2026/06/19 19:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-20T02:44:50Z"
         }
     ]
 }
