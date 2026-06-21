@@ -63,10 +63,10 @@ async def emote_index():
     emote_user_panel_packages: list[dict] = data["data"][
         "user_panel_packages"
     ]  # 用户拥有的表情包
-    logger.info(f"Fetch {len(emote_user_panel_packages)} user packages")
+    logger.info(f"[Index] Fetch {len(emote_user_panel_packages)} user packages")
 
     emote_all_packages: list[dict] = data["data"]["all_packages"]  # 所有表情包
-    logger.info(f"Fetch {len(emote_all_packages)} all packages")
+    logger.info(f"[Index] Fetch {len(emote_all_packages)} all packages")
 
     # 收集所有表情包集合 id 列表
     for package in emote_all_packages:
@@ -82,7 +82,7 @@ async def emote_index():
             "type"
         ]  # 表情包集合类型。1：普通；2：会员专属；3：购买所得；4：颜文字（颜文字只有封面图为链接的形式，具体内部的表情包均为文本，例如："( \u309c- \u309c)\u3064\u30ed"）
         if package_type == 4:  #!不需要颜文字
-            logger.warning(f"Skip {package_id}: {package_name} because it's a text")
+            logger.warning(f"[Meta] Skip {package_id}: {package_name} because it's a text")
             continue
 
         package_attr: int = package["attr"]
@@ -95,11 +95,16 @@ async def emote_index():
         package_ref_mid: int = package["ref_mid"]
         package_resource_type: int = package["resource_type"]
 
-        yield package_id, package_name
+        json_path = f"{JSON_PATH}/{package_id}_{normalize_filepath(package_name)}.json"
+
+        if await aioos.path.exists(json_path):
+            continue
+
+        yield package_id, package_name, json_path
 
 
-async def emote_detail(t: tuple[int, str]):
-    package_id, package_name = t
+async def emote_detail(t: tuple[int, str, str]):
+    package_id, package_name, json_path = t
 
     # --- requests 获取指定的表情包明细 API ---
     url = "https://api.bilibili.com/x/emote/package"  # 获取指定的表情包明细 API
@@ -122,7 +127,6 @@ async def emote_detail(t: tuple[int, str]):
     )  # 只提供了一个 package_id，而非多个以 , 隔开的 id
     package: dict = data["data"]["packages"][0]
 
-    json_path = f"{JSON_PATH}/{package_id}_{normalize_filepath(package_name)}.json"
     async with aiofiles.open(json_path, "wb") as f:
         await f.write(orjson.dumps(package))
     logger.info(f"[{package_id = }] Saved {package_name} metadata to {json_path}")
@@ -132,7 +136,7 @@ async def emote_detail(t: tuple[int, str]):
     )  #!表情列表，可能会有不存在 emote 的 item
 
     if not emotes:
-        logger.warning(f"Skip {package_id}: {package_name} because nothing to found")
+        logger.warning(f"[Image] Skip {package_id}: {package_name} because nothing to found")
         return
 
     emote_dir: str = os.path.join(
@@ -158,6 +162,9 @@ async def emote_detail(t: tuple[int, str]):
         emote_name: str = normalize_filepath(emote_name)
         emote_ext: str = os.path.splitext(emote_url)[-1]
         emote_path = os.path.join(emote_dir, emote_name + emote_ext)
+
+        if await aioos.path.exists(emote_path):
+            continue
 
         yield package_id, package_name, emote_url, emote_path
 
