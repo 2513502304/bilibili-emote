@@ -91,7 +91,15 @@ uv run scripts/update_emote_index.py --offline
 <!-- BILIBILI_EMOTE_INDEX_START -->
 <!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->
 
-## **最近 7 天上新表情包（截至北京时间 2026/06/20）**
+## **最近 7 天上新表情包（截至北京时间 2026/06/21）**
+
+### **2026/06/21**
+
+| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
+| :---: | --- | :---: | :---: | :---: |
+| `9967` | **雪间恋恋** | <img src="https://i0.hdslb.com/bfs/garb/080b2b316157078ae2d09c32db55e10b0ce77d4f.png" alt="雪间恋恋" width="64"> | 2026/06/21 18:55 | 购买所得 |
+| `9966` | **YNC小影子** | <img src="https://i0.hdslb.com/bfs/garb/adc07dbc9c5d06ca3eb041afb943001e9b4793ec.png" alt="YNC小影子" width="64"> | 2026/06/21 13:55 | 购买所得 |
+| `9965` | **白菜和杜比（充电）** | <img src="https://i0.hdslb.com/bfs/garb/dfb0d9f273bc36d6dc23a58088d7c4771095dd5f.png" alt="白菜和杜比（充电）" width="64"> | 2026/06/21 11:23 | 充电所得 |
 
 ### **2026/06/20**
 
@@ -165,18 +173,12 @@ uv run scripts/update_emote_index.py --offline
 | `9922` | **王宝煲收藏集·动态表情包** | <img src="https://i0.hdslb.com/bfs/garb/1ecb66f1100a3f5143080c18f1e8243099cfdd21.png" alt="王宝煲收藏集·动态表情包" width="64"> | 2026/06/15 12:06 | 购买所得 |
 | `9921` | **糖果精灵小喜** | <img src="https://i0.hdslb.com/bfs/garb/57b67aeb6c54dfe00fdd603c781bfd4d0360d49d.png" alt="糖果精灵小喜" width="64"> | 2026/06/15 11:01 | 购买所得 |
 
-### **2026/06/14**
-
-| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| :---: | --- | :---: | :---: | :---: |
-| `9900` | **软喵动漫-西瓜冻冻（充电）** | <img src="https://i0.hdslb.com/bfs/garb/fe38b26c3b3db58e5e3d8f97d8b263ec2c4e6385.png" alt="软喵动漫-西瓜冻冻（充电）" width="64"> | 2026/06/14 18:21 | 充电所得 |
-
 ---
 
 ## **全部表情包索引**
 
 <details>
-<summary>展开全部 7288 个表情包预览 URL</summary>
+<summary>展开全部 7291 个表情包预览 URL</summary>
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
 | :---: | --- | :---: | :---: | :---: |
@@ -7468,6 +7470,9 @@ uv run scripts/update_emote_index.py --offline
 | `9962` | **青猪表情包** | <img src="https://i0.hdslb.com/bfs/garb/00767b02c2a9fa178e8d7731f45587eb22629579.png" alt="青猪表情包" width="64"> | 2026/06/20 17:01 | 购买所得 |
 | `9963` | **夏烟装扮表情包** | <img src="https://i0.hdslb.com/bfs/garb/0cd5d4225b5eb44497f570fef976a5b55f73b6b5.png" alt="夏烟装扮表情包" width="64"> | 2026/06/20 19:55 | 购买所得 |
 | `9964` | **万花知收藏集·动态表情包** | <img src="https://i0.hdslb.com/bfs/garb/0da5a77a29dcf527796105c840a7ee79dc3b66fa.png" alt="万花知收藏集·动态表情包" width="64"> | 2026/06/20 20:00 | 购买所得 |
+| `9965` | **白菜和杜比（充电）** | <img src="https://i0.hdslb.com/bfs/garb/dfb0d9f273bc36d6dc23a58088d7c4771095dd5f.png" alt="白菜和杜比（充电）" width="64"> | 2026/06/21 11:23 | 充电所得 |
+| `9966` | **YNC小影子** | <img src="https://i0.hdslb.com/bfs/garb/adc07dbc9c5d06ca3eb041afb943001e9b4793ec.png" alt="YNC小影子" width="64"> | 2026/06/21 13:55 | 购买所得 |
+| `9967` | **雪间恋恋** | <img src="https://i0.hdslb.com/bfs/garb/080b2b316157078ae2d09c32db55e10b0ce77d4f.png" alt="雪间恋恋" width="64"> | 2026/06/21 18:55 | 购买所得 |
 
 </details>
 

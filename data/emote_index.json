@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-06-20T19:26:28Z",
-    "count": 7288,
+    "updated_at": "2026-06-21T19:41:29Z",
+    "count": 7291,
     "packages": [
         {
             "id": 1,
@@ -72883,6 +72883,36 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-06-20T19:26:28Z"
+        },
+        {
+            "id": 9965,
+            "name": "白菜和杜比（充电）",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/dfb0d9f273bc36d6dc23a58088d7c4771095dd5f.png",
+            "mtime": 1782012199,
+            "created_at": "2026/06/21 11:23",
+            "type": 12,
+            "type_label": "充电所得",
+            "first_seen_at": "2026-06-21T19:41:29Z"
+        },
+        {
+            "id": 9966,
+            "name": "YNC小影子",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/adc07dbc9c5d06ca3eb041afb943001e9b4793ec.png",
+            "mtime": 1782021300,
+            "created_at": "2026/06/21 13:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-21T19:41:29Z"
+        },
+        {
+            "id": 9967,
+            "name": "雪间恋恋",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/080b2b316157078ae2d09c32db55e10b0ce77d4f.png",
+            "mtime": 1782039300,
+            "created_at": "2026/06/21 18:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-21T19:41:29Z"
         }
     ]
 }
