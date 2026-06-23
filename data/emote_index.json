@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-06-21T19:41:29Z",
-    "count": 7291,
+    "updated_at": "2026-06-23T20:05:43Z",
+    "count": 7298,
     "packages": [
         {
             "id": 1,
@@ -72913,6 +72913,76 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-06-21T19:41:29Z"
+        },
+        {
+            "id": 9968,
+            "name": "苹狗要当小大人",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/0f4ffcce3c17da1149ea05970d101c1f131fe67d.png",
+            "mtime": 1782099000,
+            "created_at": "2026/06/22 11:30",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-23T20:05:43Z"
+        },
+        {
+            "id": 9969,
+            "name": "萱萱卡娅",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/90e8a63b3da6b1ea83108f53b524c1dba69ff18f.png",
+            "mtime": 1782099690,
+            "created_at": "2026/06/22 11:41",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-23T20:05:43Z"
+        },
+        {
+            "id": 9970,
+            "name": "梦境",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/e732bcb3437a0bdfbfa6506bb77ad0e5def175c9.png",
+            "mtime": 1782102620,
+            "created_at": "2026/06/22 12:30",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-23T20:05:43Z"
+        },
+        {
+            "id": 9972,
+            "name": "Picpicgram动态表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/5036c87665276e2f1593d606aa4e6008fd1d5838.png",
+            "mtime": 1782122461,
+            "created_at": "2026/06/22 18:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-23T20:05:43Z"
+        },
+        {
+            "id": 9973,
+            "name": "Picpicgram",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/d1816df24889c3d1163f041206bdb0c6555dad29.png",
+            "mtime": 1782122461,
+            "created_at": "2026/06/22 18:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-23T20:05:43Z"
+        },
+        {
+            "id": 9974,
+            "name": "判处勇者刑表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/438db8b25251298242ee627012492bd247aa0532.png",
+            "mtime": 1782187261,
+            "created_at": "2026/06/23 12:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-23T20:05:43Z"
+        },
+        {
+            "id": 9975,
+            "name": "鹿晴_Lu",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/785455479787c419702d341525d822188b97dea3.png",
+            "mtime": 1782219300,
+            "created_at": "2026/06/23 20:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-23T20:05:43Z"
         }
     ]
 }
