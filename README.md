@@ -91,7 +91,18 @@ uv run scripts/update_emote_index.py --offline
 <!-- BILIBILI_EMOTE_INDEX_START -->
 <!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->
 
-## **最近 7 天上新表情包（截至北京时间 2026/06/23）**
+## **最近 7 天上新表情包（截至北京时间 2026/06/24）**
+
+### **2026/06/24**
+
+| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
+| :---: | --- | :---: | :---: | :---: |
+| `9981` | **蛋黄mayo_** | <img src="https://i0.hdslb.com/bfs/garb/140e0744871b21edb4bd3e4448e2296f0e0acbac.png" alt="蛋黄mayo_" width="64"> | 2026/06/24 20:00 | 购买所得 |
+| `9980` | **2026嘉然的画册** | <img src="https://i0.hdslb.com/bfs/garb/aeec1bb796a1b01f83ba4c0ee5b8c0b2ab686e57.png" alt="2026嘉然的画册" width="64"> | 2026/06/24 19:00 | 购买所得 |
+| `9979` | **外星猫** | <img src="https://i0.hdslb.com/bfs/garb/fa68c2043d935182d5b5ba1823772693adb5cce4.png" alt="外星猫" width="64"> | 2026/06/24 17:42 | 购买所得 |
+| `9978` | **苹狗的幸运四叶草** | <img src="https://i0.hdslb.com/bfs/garb/3e797dffdfaaf1e97a1207e2deee690bae7af288.png" alt="苹狗的幸运四叶草" width="64"> | 2026/06/24 14:39 | 购买所得 |
+| `9977` | **蝶夏Channel** | <img src="https://i0.hdslb.com/bfs/garb/db922d1dca62adb29dd2fe9f0d861e7dd5a3b7dc.png" alt="蝶夏Channel" width="64"> | 2026/06/24 11:55 | 购买所得 |
+| `9976` | **糖果猫童话** | <img src="https://i0.hdslb.com/bfs/garb/a213cfa4e0891f9bb59fd0fa2698ea0fc6c9af2f.png" alt="糖果猫童话" width="64"> | 2026/06/24 09:55 | 购买所得 |
 
 ### **2026/06/23**
 
@@ -151,27 +162,12 @@ uv run scripts/update_emote_index.py --offline
 | `9948` | **DJMAX静态表情包** | <img src="https://i0.hdslb.com/bfs/garb/1822c60d95c1a70b82019b22e483dc302cfa5bf3.png" alt="DJMAX静态表情包" width="64"> | 2026/06/18 10:01 | 购买所得 |
 | `9946` | **九方唯芳** | <img src="https://i0.hdslb.com/bfs/garb/34d745e1206e63bde1efedff9cbd177106afd2ad.png" alt="九方唯芳" width="64"> | 2026/06/18 09:55 | 购买所得 |
 
-### **2026/06/17**
-
-| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| :---: | --- | :---: | :---: | :---: |
-| `9945` | **快乐的生活表情包** | <img src="https://i0.hdslb.com/bfs/garb/f9d3319c2ed9d26b2f40d4253ebbfcfda42ffd61.png" alt="快乐的生活表情包" width="64"> | 2026/06/17 21:01 | 购买所得 |
-| `9943` | **DOAXVV第二弹** | <img src="https://i0.hdslb.com/bfs/garb/d329dbecaf395cb180c23f2eca3a7b2e20f85469.png" alt="DOAXVV第二弹" width="64"> | 2026/06/17 19:00 | 购买所得 |
-| `9944` | **一陆同行动态表情** | <img src="https://i0.hdslb.com/bfs/garb/96d5d23801c5e763830285d506867a6bc11790b8.png" alt="一陆同行动态表情" width="64"> | 2026/06/17 19:00 | 购买所得 |
-| `9942` | **酸柚粥** | <img src="https://i0.hdslb.com/bfs/garb/f6018192040eceec8cc92b48609ca8c7409973d3.png" alt="酸柚粥" width="64"> | 2026/06/17 18:55 | 购买所得 |
-| `9941` | **星尘猫猫** | <img src="https://i0.hdslb.com/bfs/garb/ad6866d3291a6642848fba64a8b271231bc6c228.png" alt="星尘猫猫" width="64"> | 2026/06/17 17:55 | 购买所得 |
-| `9940` | **路人超能100表情包** | <img src="https://i0.hdslb.com/bfs/garb/f6cccbab475cf827442cd71b2a7c13f282934ac2.png" alt="路人超能100表情包" width="64"> | 2026/06/17 17:00 | 购买所得 |
-| `9939` | **校园小萌粒** | <img src="https://i0.hdslb.com/bfs/garb/8a7bc2be5ce30dfe6c8b6e154499d7f820c7d458.png" alt="校园小萌粒" width="64"> | 2026/06/17 15:39 | 购买所得 |
-| `9938` | **新兔少女** | <img src="https://i0.hdslb.com/bfs/garb/e091bf55de15cd6ad7387c8c5771cceff28595f4.png" alt="新兔少女" width="64"> | 2026/06/17 15:32 | 购买所得 |
-| `9937` | **小花仙心跳电波系列** | <img src="https://i0.hdslb.com/bfs/garb/723b07de21c0d62467146597e7eb90aee0ba7733.png" alt="小花仙心跳电波系列" width="64"> | 2026/06/17 15:30 | 购买所得 |
-| `9936` | **卡绒_Charon表情包** | <img src="https://i0.hdslb.com/bfs/garb/cfdf38f717156d8fcb1e19e31237beacd1ea234e.png" alt="卡绒_Charon表情包" width="64"> | 2026/06/17 11:55 | 购买所得 |
-
 ---
 
 ## **全部表情包索引**
 
 <details>
-<summary>展开全部 7298 个表情包预览 URL</summary>
+<summary>展开全部 7305 个表情包预览 URL</summary>
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
 | :---: | --- | :---: | :---: | :---: |
@@ -7473,6 +7469,13 @@ uv run scripts/update_emote_index.py --offline
 | `9973` | **Picpicgram** | <img src="https://i0.hdslb.com/bfs/garb/d1816df24889c3d1163f041206bdb0c6555dad29.png" alt="Picpicgram" width="64"> | 2026/06/22 18:01 | 购买所得 |
 | `9974` | **判处勇者刑表情包** | <img src="https://i0.hdslb.com/bfs/garb/438db8b25251298242ee627012492bd247aa0532.png" alt="判处勇者刑表情包" width="64"> | 2026/06/23 12:01 | 购买所得 |
 | `9975` | **鹿晴_Lu** | <img src="https://i0.hdslb.com/bfs/garb/785455479787c419702d341525d822188b97dea3.png" alt="鹿晴_Lu" width="64"> | 2026/06/23 20:55 | 购买所得 |
+| `9976` | **糖果猫童话** | <img src="https://i0.hdslb.com/bfs/garb/a213cfa4e0891f9bb59fd0fa2698ea0fc6c9af2f.png" alt="糖果猫童话" width="64"> | 2026/06/24 09:55 | 购买所得 |
+| `9977` | **蝶夏Channel** | <img src="https://i0.hdslb.com/bfs/garb/db922d1dca62adb29dd2fe9f0d861e7dd5a3b7dc.png" alt="蝶夏Channel" width="64"> | 2026/06/24 11:55 | 购买所得 |
+| `9978` | **苹狗的幸运四叶草** | <img src="https://i0.hdslb.com/bfs/garb/3e797dffdfaaf1e97a1207e2deee690bae7af288.png" alt="苹狗的幸运四叶草" width="64"> | 2026/06/24 14:39 | 购买所得 |
+| `9979` | **外星猫** | <img src="https://i0.hdslb.com/bfs/garb/fa68c2043d935182d5b5ba1823772693adb5cce4.png" alt="外星猫" width="64"> | 2026/06/24 17:42 | 购买所得 |
+| `9980` | **2026嘉然的画册** | <img src="https://i0.hdslb.com/bfs/garb/aeec1bb796a1b01f83ba4c0ee5b8c0b2ab686e57.png" alt="2026嘉然的画册" width="64"> | 2026/06/24 19:00 | 购买所得 |
+| `9981` | **蛋黄mayo_** | <img src="https://i0.hdslb.com/bfs/garb/140e0744871b21edb4bd3e4448e2296f0e0acbac.png" alt="蛋黄mayo_" width="64"> | 2026/06/24 20:00 | 购买所得 |
+| `9982` | **大象放映室（充电）** | <img src="https://i0.hdslb.com/bfs/garb/5ad833b55d6ac4a7daa532f9a9610d45bb3ed59a.png" alt="大象放映室（充电）" width="64"> | 2026/06/25 01:59 | 充电所得 |
 
 </details>
 

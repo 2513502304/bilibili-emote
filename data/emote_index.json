@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-06-23T20:05:43Z",
-    "count": 7298,
+    "updated_at": "2026-06-24T19:45:45Z",
+    "count": 7305,
     "packages": [
         {
             "id": 1,
@@ -72983,6 +72983,76 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-06-23T20:05:43Z"
+        },
+        {
+            "id": 9976,
+            "name": "糖果猫童话",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/a213cfa4e0891f9bb59fd0fa2698ea0fc6c9af2f.png",
+            "mtime": 1782266100,
+            "created_at": "2026/06/24 09:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-24T19:45:45Z"
+        },
+        {
+            "id": 9977,
+            "name": "蝶夏Channel",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/db922d1dca62adb29dd2fe9f0d861e7dd5a3b7dc.png",
+            "mtime": 1782273300,
+            "created_at": "2026/06/24 11:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-24T19:45:45Z"
+        },
+        {
+            "id": 9978,
+            "name": "苹狗的幸运四叶草",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/3e797dffdfaaf1e97a1207e2deee690bae7af288.png",
+            "mtime": 1782283190,
+            "created_at": "2026/06/24 14:39",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-24T19:45:45Z"
+        },
+        {
+            "id": 9979,
+            "name": "外星猫",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/fa68c2043d935182d5b5ba1823772693adb5cce4.png",
+            "mtime": 1782294130,
+            "created_at": "2026/06/24 17:42",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-24T19:45:45Z"
+        },
+        {
+            "id": 9980,
+            "name": "2026嘉然的画册",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/aeec1bb796a1b01f83ba4c0ee5b8c0b2ab686e57.png",
+            "mtime": 1782298801,
+            "created_at": "2026/06/24 19:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-24T19:45:45Z"
+        },
+        {
+            "id": 9981,
+            "name": "蛋黄mayo_",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/140e0744871b21edb4bd3e4448e2296f0e0acbac.png",
+            "mtime": 1782302401,
+            "created_at": "2026/06/24 20:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-24T19:45:45Z"
+        },
+        {
+            "id": 9982,
+            "name": "大象放映室（充电）",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/5ad833b55d6ac4a7daa532f9a9610d45bb3ed59a.png",
+            "mtime": 1782323956,
+            "created_at": "2026/06/25 01:59",
+            "type": 12,
+            "type_label": "充电所得",
+            "first_seen_at": "2026-06-24T19:45:45Z"
         }
     ]
 }
