@@ -91,7 +91,24 @@ uv run scripts/update_emote_index.py --offline
 <!-- BILIBILI_EMOTE_INDEX_START -->
 <!-- 下面内容由 scripts/update_emote_index.py 自动生成，请勿手动编辑此区块。 -->
 
-## **最近 7 天上新表情包（截至北京时间 2026/06/24）**
+## **最近 7 天上新表情包（截至北京时间 2026/06/25）**
+
+### **2026/06/25**
+
+| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
+| :---: | --- | :---: | :---: | :---: |
+| `9993` | **雪野时雨** | <img src="https://i0.hdslb.com/bfs/garb/b6b9e93bdde8ee194904fbe4a25987904cbb00d4.png" alt="雪野时雨" width="64"> | 2026/06/25 19:55 | 购买所得 |
+| `9992` | **养狸拾光** | <img src="https://i0.hdslb.com/bfs/garb/dd8aa19628c04e65b30b1bddffaf0d865f623cf7.png" alt="养狸拾光" width="64"> | 2026/06/25 19:00 | 购买所得 |
+| `9991` | **冬星铃Kira** | <img src="https://i0.hdslb.com/bfs/garb/15e54ab070996cca5a7021337437fa8aee868953.png" alt="冬星铃Kira" width="64"> | 2026/06/25 18:55 | 购买所得 |
+| `9989` | **轻音少女第一季表情包** | <img src="https://i0.hdslb.com/bfs/garb/e1d0cb0d8d05f85e4e3cee3b575b58618a72b6ad.png" alt="轻音少女第一季表情包" width="64"> | 2026/06/25 18:01 | 购买所得 |
+| `9990` | **少女咏叹调表情包** | <img src="https://i0.hdslb.com/bfs/garb/6b6fe400ed2db4f68a4c78566cae98bc56a1ede4.png" alt="少女咏叹调表情包" width="64"> | 2026/06/25 18:01 | 购买所得 |
+| `9988` | **樱花萌放表情** | <img src="https://i0.hdslb.com/bfs/garb/a1b4d1d8bad84b90b21019309af24d430ec06ddb.png" alt="樱花萌放表情" width="64"> | 2026/06/25 17:01 | 购买所得 |
+| `9987` | **兰音Reine收藏集静态表情包** | <img src="https://i0.hdslb.com/bfs/garb/8cc1ec434e9e79925d702fddf2985cecf348efc3.png" alt="兰音Reine收藏集静态表情包" width="64"> | 2026/06/25 16:00 | 购买所得 |
+| `9986` | **小雪莉ovo** | <img src="https://i0.hdslb.com/bfs/garb/5d828b435e56838973a4e85195b15fd4e9029038.png" alt="小雪莉ovo" width="64"> | 2026/06/25 14:55 | 购买所得 |
+| `9985` | **茳枫** | <img src="https://i0.hdslb.com/bfs/garb/a1f34006097449b48b8c8125635fafb82acf76ee.png" alt="茳枫" width="64"> | 2026/06/25 11:55 | 购买所得 |
+| `9983` | **临渊杂货铺·天幕晗光** | <img src="https://i0.hdslb.com/bfs/garb/b5f0e2493ec55f026fb2df245ef896192d83c2f7.png" alt="临渊杂货铺·天幕晗光" width="64"> | 2026/06/25 11:55 | 购买所得 |
+| `9984` | **长条猫猫小世子** | <img src="https://i0.hdslb.com/bfs/garb/9b1897159e81cd76dccc5b06ef3702eb1295f72c.png" alt="长条猫猫小世子" width="64"> | 2026/06/25 11:55 | 购买所得 |
+| `9982` | **大象放映室（充电）** | <img src="https://i0.hdslb.com/bfs/garb/5ad833b55d6ac4a7daa532f9a9610d45bb3ed59a.png" alt="大象放映室（充电）" width="64"> | 2026/06/25 01:59 | 充电所得 |
 
 ### **2026/06/24**
 
@@ -148,26 +165,12 @@ uv run scripts/update_emote_index.py --offline
 | `9957` | **局长收藏集第二弹动态表情包** | <img src="https://i0.hdslb.com/bfs/garb/8eac2db46fb85c6b1cdeaf37e8d93f6eae5e543f.png" alt="局长收藏集第二弹动态表情包" width="64"> | 2026/06/19 18:00 | 购买所得 |
 | `9956` | **瑾瑜_kilo（充电）** | <img src="https://i0.hdslb.com/bfs/garb/794f7c463c4c88abc1840dac11583adf57749971.png" alt="瑾瑜_kilo（充电）" width="64"> | 2026/06/19 12:45 | 充电所得 |
 
-### **2026/06/18**
-
-| ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
-| :---: | --- | :---: | :---: | :---: |
-| `9954` | **解集** | <img src="https://i0.hdslb.com/bfs/garb/e48d8b97b50126c7ead90993bddd48718e83be76.png" alt="解集" width="64"> | 2026/06/18 21:58 | 购买所得 |
-| `9953` | **海盐雪糕小猫烧** | <img src="https://i0.hdslb.com/bfs/garb/e2ecc0bd5f4be301090af7c1b42e218b21d4fbba.png" alt="海盐雪糕小猫烧" width="64"> | 2026/06/18 19:55 | 购买所得 |
-| `9952` | **天玉动画（充电）** | <img src="https://i0.hdslb.com/bfs/garb/3e9d1c2214698d63bc43e511ff2a1f5653e3a949.png" alt="天玉动画（充电）" width="64"> | 2026/06/18 13:42 | 充电所得 |
-| `9951` | **BW2026 表情包** | <img src="https://i0.hdslb.com/bfs/garb/f317e47140a0df41d2dd6719da2d8b563fcfa8f9.png" alt="BW2026 表情包" width="64"> | 2026/06/18 12:00 | 购买所得 |
-| `9950` | **雾岛眠nemuri** | <img src="https://i0.hdslb.com/bfs/garb/e58f923cb6b16d96e61eb9ee7e273aa6fcbf3a6b.png" alt="雾岛眠nemuri" width="64"> | 2026/06/18 11:55 | 购买所得 |
-| `9949` | **Kitsune泛星际报（充电）** | <img src="https://i0.hdslb.com/bfs/garb/efe4d25fdbaf8ffa857553ced3d5b3d54db0a56f.png" alt="Kitsune泛星际报（充电）" width="64"> | 2026/06/18 11:53 | 充电所得 |
-| `9947` | **DJMAX动态表情包** | <img src="https://i0.hdslb.com/bfs/garb/76d0aff39bf115f7f24bfd9b9c43eeffeea9628f.png" alt="DJMAX动态表情包" width="64"> | 2026/06/18 10:01 | 购买所得 |
-| `9948` | **DJMAX静态表情包** | <img src="https://i0.hdslb.com/bfs/garb/1822c60d95c1a70b82019b22e483dc302cfa5bf3.png" alt="DJMAX静态表情包" width="64"> | 2026/06/18 10:01 | 购买所得 |
-| `9946` | **九方唯芳** | <img src="https://i0.hdslb.com/bfs/garb/34d745e1206e63bde1efedff9cbd177106afd2ad.png" alt="九方唯芳" width="64"> | 2026/06/18 09:55 | 购买所得 |
-
 ---
 
 ## **全部表情包索引**
 
 <details>
-<summary>展开全部 7305 个表情包预览 URL</summary>
+<summary>展开全部 7316 个表情包预览 URL</summary>
 
 | ID | 表情包名称 | 表情包预览 URL | 添加时间 | 表情包类型 |
 | :---: | --- | :---: | :---: | :---: |
@@ -7476,6 +7479,17 @@ uv run scripts/update_emote_index.py --offline
 | `9980` | **2026嘉然的画册** | <img src="https://i0.hdslb.com/bfs/garb/aeec1bb796a1b01f83ba4c0ee5b8c0b2ab686e57.png" alt="2026嘉然的画册" width="64"> | 2026/06/24 19:00 | 购买所得 |
 | `9981` | **蛋黄mayo_** | <img src="https://i0.hdslb.com/bfs/garb/140e0744871b21edb4bd3e4448e2296f0e0acbac.png" alt="蛋黄mayo_" width="64"> | 2026/06/24 20:00 | 购买所得 |
 | `9982` | **大象放映室（充电）** | <img src="https://i0.hdslb.com/bfs/garb/5ad833b55d6ac4a7daa532f9a9610d45bb3ed59a.png" alt="大象放映室（充电）" width="64"> | 2026/06/25 01:59 | 充电所得 |
+| `9983` | **临渊杂货铺·天幕晗光** | <img src="https://i0.hdslb.com/bfs/garb/b5f0e2493ec55f026fb2df245ef896192d83c2f7.png" alt="临渊杂货铺·天幕晗光" width="64"> | 2026/06/25 11:55 | 购买所得 |
+| `9984` | **长条猫猫小世子** | <img src="https://i0.hdslb.com/bfs/garb/9b1897159e81cd76dccc5b06ef3702eb1295f72c.png" alt="长条猫猫小世子" width="64"> | 2026/06/25 11:55 | 购买所得 |
+| `9985` | **茳枫** | <img src="https://i0.hdslb.com/bfs/garb/a1f34006097449b48b8c8125635fafb82acf76ee.png" alt="茳枫" width="64"> | 2026/06/25 11:55 | 购买所得 |
+| `9986` | **小雪莉ovo** | <img src="https://i0.hdslb.com/bfs/garb/5d828b435e56838973a4e85195b15fd4e9029038.png" alt="小雪莉ovo" width="64"> | 2026/06/25 14:55 | 购买所得 |
+| `9987` | **兰音Reine收藏集静态表情包** | <img src="https://i0.hdslb.com/bfs/garb/8cc1ec434e9e79925d702fddf2985cecf348efc3.png" alt="兰音Reine收藏集静态表情包" width="64"> | 2026/06/25 16:00 | 购买所得 |
+| `9988` | **樱花萌放表情** | <img src="https://i0.hdslb.com/bfs/garb/a1b4d1d8bad84b90b21019309af24d430ec06ddb.png" alt="樱花萌放表情" width="64"> | 2026/06/25 17:01 | 购买所得 |
+| `9989` | **轻音少女第一季表情包** | <img src="https://i0.hdslb.com/bfs/garb/e1d0cb0d8d05f85e4e3cee3b575b58618a72b6ad.png" alt="轻音少女第一季表情包" width="64"> | 2026/06/25 18:01 | 购买所得 |
+| `9990` | **少女咏叹调表情包** | <img src="https://i0.hdslb.com/bfs/garb/6b6fe400ed2db4f68a4c78566cae98bc56a1ede4.png" alt="少女咏叹调表情包" width="64"> | 2026/06/25 18:01 | 购买所得 |
+| `9991` | **冬星铃Kira** | <img src="https://i0.hdslb.com/bfs/garb/15e54ab070996cca5a7021337437fa8aee868953.png" alt="冬星铃Kira" width="64"> | 2026/06/25 18:55 | 购买所得 |
+| `9992` | **养狸拾光** | <img src="https://i0.hdslb.com/bfs/garb/dd8aa19628c04e65b30b1bddffaf0d865f623cf7.png" alt="养狸拾光" width="64"> | 2026/06/25 19:00 | 购买所得 |
+| `9993` | **雪野时雨** | <img src="https://i0.hdslb.com/bfs/garb/b6b9e93bdde8ee194904fbe4a25987904cbb00d4.png" alt="雪野时雨" width="64"> | 2026/06/25 19:55 | 购买所得 |
 
 </details>
 
