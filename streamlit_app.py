@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import asyncio
-import base64
 import datetime as dt
 import html
 import io
@@ -28,7 +27,6 @@ PAGE_SIZE_OPTIONS = [24, 48, 96, 144]
 DEFAULT_PAGE_SIZE = 48
 MEDIA_CONCURRENCY = 32
 DETAIL_PROGRESS_WEIGHT = 0.35
-PREVIEW_MAX_BYTES = 2 * 1024 * 1024
 TRUSTED_IMAGE_HOST_SUFFIXES = ("hdslb.com", "bilibili.com")
 SELECTED_IDS_KEY = "selected_package_ids"
 ARCHIVE_BYTES_KEY = "archive_bytes"
@@ -423,19 +421,6 @@ def package_by_id(packages: list[dict[str, Any]]) -> dict[int, dict[str, Any]]:
     return {int(package["id"]): package for package in packages}
 
 
-def mime_from_url(url: str) -> str:
-    suffix = extension_from_url(url).lower()
-    return {
-        ".apng": "image/png",
-        ".avif": "image/avif",
-        ".gif": "image/gif",
-        ".jpg": "image/jpeg",
-        ".jpeg": "image/jpeg",
-        ".png": "image/png",
-        ".webp": "image/webp",
-    }.get(suffix, "application/octet-stream")
-
-
 def trusted_image_url(url: str) -> str | None:
     parsed = urlparse(url)
     host = (parsed.hostname or "").lower()
@@ -447,38 +432,6 @@ def trusted_image_url(url: str) -> str | None:
         return None
 
     return urlunparse(parsed._replace(scheme="https"))
-
-
-@st.cache_data(show_spinner=False, ttl=60 * 60 * 24)
-def preview_data_uri(url: str) -> str | None:
-    safe_url = trusted_image_url(url)
-    if safe_url is None:
-        return None
-
-    return asyncio.run(fetch_preview_data_uri(safe_url))
-
-
-async def fetch_preview_data_uri(safe_url: str) -> str | None:
-    client = make_booru_client(timeout=20.0, pool_size=4)
-    try:
-        response = await client.get(
-            safe_url,
-            headers={"Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8"},
-            referer=REFERER,
-        )
-        raw_content_type = response.headers.get("Content-Type")
-        content_type = response.headers.get_content_type() if raw_content_type else mime_from_url(safe_url)
-        if not content_type.startswith("image/"):
-            return None
-        content = response.content
-        if len(content) > PREVIEW_MAX_BYTES:
-            return None
-        encoded = base64.b64encode(content).decode("ascii")
-        return f"data:{content_type};base64,{encoded}"
-    except Exception:
-        return None
-    finally:
-        await client.client.close()
 
 
 def render_header(index: dict[str, Any], packages: list[dict[str, Any]]) -> None:
@@ -505,10 +458,9 @@ def render_package_card(package: dict[str, Any], selected_ids: set[int]) -> None
     safe_name = html.escape(str(package["name"]))
     preview_url = str(package["preview_url"])
     safe_preview_url = trusted_image_url(preview_url)
-    preview_src = preview_data_uri(preview_url) or safe_preview_url
     image_html = (
-        f'<img src="{html.escape(preview_src, quote=True)}" alt="{safe_name}" loading="lazy" referrerpolicy="no-referrer">'
-        if preview_src
+        f'<img src="{html.escape(safe_preview_url, quote=True)}" alt="{safe_name}" loading="lazy" decoding="async" referrerpolicy="no-referrer">'
+        if safe_preview_url
         else '<span class="emote-meta">预览加载失败</span>'
     )
     key = checkbox_key(package_id)
