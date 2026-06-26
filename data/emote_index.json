@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-06-25T20:00:41Z",
-    "count": 7316,
+    "updated_at": "2026-06-26T19:48:08Z",
+    "count": 7321,
     "packages": [
         {
             "id": 1,
@@ -70648,8 +70648,8 @@
             "id": 9719,
             "name": "奥里卡豆（充电）",
             "preview_url": "https://i0.hdslb.com/bfs/garb/7b07aa9a933bea6714dcefa319dae75bcd0ddf9d.png",
-            "mtime": 1777647969,
-            "created_at": "2026/05/01 23:06",
+            "mtime": 1782472871,
+            "created_at": "2026/06/26 19:21",
             "type": 12,
             "type_label": "充电所得",
             "first_seen_at": "2026-06-14T04:13:04Z"
@@ -73163,6 +73163,56 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-06-25T20:00:41Z"
+        },
+        {
+            "id": 9995,
+            "name": "动物青苹果乐园",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/fa9f975ff4042b0e2c9691f3b09f2cdb9752cc66.png",
+            "mtime": 1782440670,
+            "created_at": "2026/06/26 10:24",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-26T19:48:08Z"
+        },
+        {
+            "id": 9996,
+            "name": "鸣潮2周年同人绘画",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/a70994d6bd0c35e9e5832365edad6e5e8b1e025d.png",
+            "mtime": 1782464401,
+            "created_at": "2026/06/26 17:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-26T19:48:08Z"
+        },
+        {
+            "id": 9997,
+            "name": "礼墨sumi",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/6cb0e993283e09c13cbb57c15433ac8f6279be1a.png",
+            "mtime": 1782467700,
+            "created_at": "2026/06/26 17:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-26T19:48:08Z"
+        },
+        {
+            "id": 9999,
+            "name": "小Bee登xbeed",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/79d33b37e4f5ae53aa3869e1b192e0b771b6f2bb.png",
+            "mtime": 1782474900,
+            "created_at": "2026/06/26 19:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-26T19:48:08Z"
+        },
+        {
+            "id": 10000,
+            "name": "家有爱鸽",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/800d9ebced0543607eaf13bb6ce85a64c922596f.png",
+            "mtime": 1782478500,
+            "created_at": "2026/06/26 20:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-06-26T19:48:08Z"
         }
     ]
 }
