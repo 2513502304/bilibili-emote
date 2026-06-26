@@ -28,7 +28,7 @@ client = Booru(
     timeout=60.0 * 5,
 )
 
-logger = logging.getLogger("__main__")
+logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 # 要提取该仓库下某一个目录的文件路径
