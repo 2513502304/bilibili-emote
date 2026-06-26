@@ -78,7 +78,21 @@ uv run main.py
 uv run python main.py
 ```
 
+`main.py` 请求表情包索引时需要 Bilibili 登录态 Cookie。获取方式：
+
+1. 登录 Bilibili 后访问 [收藏集活动页](https://www.bilibili.com/h5/mall/digital-card/home?from_id=&act_id=101221)。
+2. 打开浏览器开发者工具，在 Network 面板切到 Fetch/XHR。
+3. 搜索 `https://api.bilibili.com/x/vas/dlc_act/lottery/home_detail/v2?act_id=101221`。
+4. 打开匹配到的请求，在 Request Headers 中复制 `Cookie` 请求头，作为本地运行 `main.py` 时使用的 Cookie。
+
+Cookie 属于敏感登录凭据，只应放在本机调试环境或 GitHub repository secret 中，不要提交到仓库，也不要写入 README、issue、日志或其他公开位置。
+
 脚本会把结果写入当前目录下的 `./bilibili-emote/images/` 和 `./bilibili-emote/jsons/`。全量下载会请求大量公开图片，请根据本机网络情况预留时间和磁盘空间。
+
+## **同系列项目**
+
+- [bilibili-mall](https://github.com/2513502304/bilibili-mall)：一款用于在哔哩哔哩会员购市集内搜索优惠商品的系统。
+- [bilibili-collection](https://github.com/2513502304/bilibili-collection)：一个 Streamlit 交互式前端页面，用于下载每日更新的 Bilibili 收藏集。
 
 ## **自动更新**
 
