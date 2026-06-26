@@ -6,12 +6,10 @@ import datetime as dt
 import html
 import io
 import logging
-from pathlib import Path
 from collections.abc import Callable
+from pathlib import Path
 from typing import Any
-from urllib.error import HTTPError, URLError
 from urllib.parse import unquote, urlparse, urlunparse
-from urllib.request import Request, urlopen
 from zipfile import ZIP_DEFLATED, ZipFile
 
 import orjson
@@ -28,9 +26,9 @@ REFERER = "https://www.bilibili.com"
 APP_TIMEZONE = dt.timezone(dt.timedelta(hours=8), "UTC+8")
 PAGE_SIZE_OPTIONS = [24, 48, 96, 144]
 DEFAULT_PAGE_SIZE = 48
-DETAIL_CONCURRENCY = 8
 MEDIA_CONCURRENCY = 32
 DETAIL_PROGRESS_WEIGHT = 0.35
+PREVIEW_MAX_BYTES = 2 * 1024 * 1024
 TRUSTED_IMAGE_HOST_SUFFIXES = ("hdslb.com", "bilibili.com")
 SELECTED_IDS_KEY = "selected_package_ids"
 ARCHIVE_BYTES_KEY = "archive_bytes"
@@ -300,6 +298,18 @@ def selected_ids() -> set[int]:
     return current_ids
 
 
+def prune_selected_ids(valid_ids: set[int]) -> None:
+    current_ids = selected_ids()
+    stale_ids = current_ids - valid_ids
+    if not stale_ids:
+        return
+
+    current_ids.difference_update(stale_ids)
+    for package_id in stale_ids:
+        st.session_state.pop(checkbox_key(package_id), None)
+    invalidate_archive()
+
+
 def selection_signature() -> tuple[int, ...]:
     return tuple(sorted(selected_ids()))
 
@@ -445,21 +455,30 @@ def preview_data_uri(url: str) -> str | None:
     if safe_url is None:
         return None
 
-    request = Request(
-        safe_url,
-        headers={
-            "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
-            "Referer": REFERER,
-            "User-Agent": "Mozilla/5.0 BilibiliEmoteDownloader/1.0",
-        },
-    )
+    return asyncio.run(fetch_preview_data_uri(safe_url))
+
+
+async def fetch_preview_data_uri(safe_url: str) -> str | None:
+    client = make_booru_client(timeout=20.0, pool_size=4)
     try:
-        with urlopen(request, timeout=20.0) as response:
-            content_type = response.headers.get_content_type() or mime_from_url(safe_url)
-            encoded = base64.b64encode(response.read()).decode("ascii")
-            return f"data:{content_type};base64,{encoded}"
-    except (HTTPError, URLError, TimeoutError):
+        response = await client.get(
+            safe_url,
+            headers={"Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8"},
+            referer=REFERER,
+        )
+        raw_content_type = response.headers.get("Content-Type")
+        content_type = response.headers.get_content_type() if raw_content_type else mime_from_url(safe_url)
+        if not content_type.startswith("image/"):
+            return None
+        content = response.content
+        if len(content) > PREVIEW_MAX_BYTES:
+            return None
+        encoded = base64.b64encode(content).decode("ascii")
+        return f"data:{content_type};base64,{encoded}"
+    except Exception:
         return None
+    finally:
+        await client.client.close()
 
 
 def render_header(index: dict[str, Any], packages: list[dict[str, Any]]) -> None:
@@ -581,7 +600,7 @@ def render_pagination(current_page: int, max_page: int, key_prefix: str) -> None
             request_page(max_page)
 
 
-def make_booru_client() -> Booru:
+def make_booru_client(timeout: float = 60.0 * 5, pool_size: int = MEDIA_CONCURRENCY) -> Booru:
     return Booru(
         logger_level=logging.ERROR,
         base_url=REFERER,
@@ -590,27 +609,25 @@ def make_booru_client() -> Booru:
         max_attempt_number=3,
         retries=3,
         rate_limit=None,
-        timeout=60.0 * 5,
-        pool_connections=MEDIA_CONCURRENCY,
-        pool_maxsize=MEDIA_CONCURRENCY,
+        timeout=timeout,
+        pool_connections=pool_size,
+        pool_maxsize=pool_size,
     )
 
 
 async def fetch_package_detail(
     client: Booru,
     package: dict[str, Any],
-    semaphore: asyncio.Semaphore,
 ) -> dict[str, Any]:
     package_id = int(package["id"])
-    async with semaphore:
-        response = await client.get(
-            DETAIL_API,
-            params={
-                "business": "reply",
-                "ids": package_id,
-            },
-            referer=REFERER,
-        )
+    response = await client.get(
+        DETAIL_API,
+        params={
+            "business": "reply",
+            "ids": package_id,
+        },
+        referer=REFERER,
+    )
 
     payload = response.json()
     if payload.get("code") != 0:
@@ -627,9 +644,8 @@ async def fetch_package_detail(
 async def fetch_package_detail_job(
     client: Booru,
     package: dict[str, Any],
-    semaphore: asyncio.Semaphore,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
-    return package, await fetch_package_detail(client, package, semaphore)
+    return package, await fetch_package_detail(client, package)
 
 
 async def fetch_emote_bytes(
@@ -638,15 +654,13 @@ async def fetch_emote_bytes(
     package_name: str,
     emote: dict[str, Any],
     emote_url: str,
-    semaphore: asyncio.Semaphore,
 ) -> tuple[str, bytes, str]:
     emote_name = normalize_filepath(str(emote.get("text") or emote.get("id") or "emote"))
     emote_path = (
         f"bilibili-emote/images/{package_id}_{normalize_filepath(package_name)}/"
         f"{emote_name}{extension_from_url(emote_url)}"
     )
-    async with semaphore:
-        response = await client.get(emote_url, referer=REFERER)
+    response = await client.get(emote_url, referer=REFERER)
 
     return emote_path, response.content, emote_name
 
@@ -676,8 +690,6 @@ async def build_zip_async(
     failures: list[str] = []
     skipped_texts = 0
     succeeded_emotes = 0
-    detail_semaphore = asyncio.Semaphore(DETAIL_CONCURRENCY)
-    media_semaphore = asyncio.Semaphore(MEDIA_CONCURRENCY)
 
     try:
         if progress_callback:
@@ -702,7 +714,7 @@ async def build_zip_async(
             raise RuntimeError("选中的表情包均为颜文字，不包含可下载图片资源。")
 
         detail_tasks = [
-            asyncio.create_task(fetch_package_detail_job(client, package, detail_semaphore))
+            asyncio.create_task(fetch_package_detail_job(client, package))
             for package in downloadable_packages
         ]
         for completed_index, task in enumerate(asyncio.as_completed(detail_tasks), start=1):
@@ -794,7 +806,6 @@ async def build_zip_async(
                         str(package["name"]),
                         emote,
                         emote_url,
-                        media_semaphore,
                     )
                 )
                 for package, _, emote, emote_url in media_jobs
@@ -856,8 +867,13 @@ def sync_filtered_multiselect(
     filtered: list[dict[str, Any]],
     packages_by_id: dict[int, dict[str, Any]],
 ) -> None:
-    option_ids = [int(package["id"]) for package in filtered]
+    filtered_ids = [int(package["id"]) for package in filtered]
     current_ids = selected_ids()
+    option_ids = [
+        package_id
+        for package_id in dict.fromkeys(filtered_ids + sorted(current_ids))
+        if package_id in packages_by_id
+    ]
     st.session_state[BATCH_SELECT_KEY] = [
         package_id for package_id in option_ids if package_id in current_ids
     ]
@@ -1035,6 +1051,8 @@ def main() -> None:
     index = load_index(str(INDEX_PATH), INDEX_PATH.stat().st_mtime_ns)
     packages = list(index["packages"])
     frame = package_frame(packages)
+    packages_by_id = package_by_id(packages)
+    prune_selected_ids(set(packages_by_id))
 
     render_header(index, packages)
 
@@ -1064,8 +1082,6 @@ def main() -> None:
         current_page = st.session_state[PAGE_KEY]
         start = (current_page - 1) * page_size
         page_items = filtered[start : start + page_size]
-        packages_by_id = package_by_id(packages)
-
         st.markdown(
             f"<div class='toolbar-note'>当前显示 {len(filtered):,} / {len(packages):,} 个表情包。</div>",
             unsafe_allow_html=True,
