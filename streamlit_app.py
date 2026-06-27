@@ -43,6 +43,9 @@ SEARCH_HELP = """- 支持按表情包 ID 或名称搜索，多个关键词会同
 PAGE_SIZE_HELP = """- 控制当前页面一次渲染多少个表情包卡片。
 - 数量越大，页面预览图越多，首次渲染和滚动会更重。
 - 示例：浏览全量索引时可用 `48`，快速翻页时可用 `96`。"""
+PAGE_JUMP_HELP = """- 输入页码后会直接跳转到对应页面。
+- 左右两侧的 `-` / `+` 按钮用于快速切换上一页或下一页。
+- 搜索条件变化时会回到第 1 页，避免停留在旧结果的页码上。"""
 BATCH_SELECT_HELP = """- 从当前搜索结果中批量添加或移除表情包。
 - 这里的选择会和下方卡片 checkbox 保持同步。
 - 示例：先搜索 `充电`，再在这里多选需要下载的充电表情包。"""
@@ -417,6 +420,57 @@ def request_page(page: int) -> None:
     st.rerun()
 
 
+def render_page_jump_controls(
+    page: int,
+    max_page: int,
+    visible_count: int,
+    total_count: int,
+) -> int:
+    control_col, caption_col = st.columns([1.6, 3], vertical_alignment="center")
+    with control_col:
+        minus_col, input_col, plus_col = st.columns([0.7, 1.5, 0.7], vertical_alignment="bottom")
+        with minus_col:
+            if st.button(
+                "-",
+                icon=":material/remove:",
+                disabled=page <= 1,
+                key="page_minus",
+                width="stretch",
+                help="上一页",
+            ):
+                request_page(page - 1)
+        with input_col:
+            page = int(
+                st.number_input(
+                    "页码",
+                    min_value=1,
+                    max_value=max_page,
+                    step=1,
+                    key=PAGE_KEY,
+                    help=PAGE_JUMP_HELP,
+                )
+            )
+        with plus_col:
+            if st.button(
+                "+",
+                icon=":material/add:",
+                disabled=page >= max_page,
+                key="page_plus",
+                width="stretch",
+                help="下一页",
+            ):
+                request_page(page + 1)
+
+    with caption_col:
+        st.markdown(
+            f"<div class='toolbar-note'>当前显示 {visible_count:,} / {total_count:,} 个表情包，"
+            f"第 {page:,} / {max_page:,} 页。</div>",
+            unsafe_allow_html=True,
+        )
+
+    return page
+
+
 def package_by_id(packages: list[dict[str, Any]]) -> dict[int, dict[str, Any]]:
     return {int(package["id"]): package for package in packages}
 
@@ -512,44 +566,27 @@ def render_grid(packages: list[dict[str, Any]], page: int, page_size: int) -> No
 
 
 def render_pagination(current_page: int, max_page: int, key_prefix: str) -> None:
-    first, previous, page_info, next_, last = st.columns([1, 1, 2, 1, 1])
-    with first:
-        if st.button(
-            "首页",
-            disabled=current_page <= 1,
-            key=f"{key_prefix}_first",
-            width="stretch",
-        ):
-            request_page(1)
-    with previous:
-        if st.button(
-            "上一页",
-            disabled=current_page <= 1,
-            key=f"{key_prefix}_previous",
-            width="stretch",
-        ):
-            request_page(current_page - 1)
-    with page_info:
+    if max_page <= 1:
+        return
+
+    left_col, center_col, right_col = st.columns([2, 1, 2], vertical_alignment="center")
+    with left_col:
+        with st.container(horizontal=True, gap="small"):
+            if st.button("首页", disabled=current_page <= 1, key=f"{key_prefix}_first", icon=":material/first_page:"):
+                request_page(1)
+            if st.button("上一页", disabled=current_page <= 1, key=f"{key_prefix}_previous", icon=":material/chevron_left:"):
+                request_page(current_page - 1)
+    with center_col:
         st.markdown(
             f"<div class='toolbar-note' style='text-align:center;'>第 {current_page} / {max_page} 页</div>",
             unsafe_allow_html=True,
         )
-    with next_:
-        if st.button(
-            "下一页",
-            disabled=current_page >= max_page,
-            key=f"{key_prefix}_next",
-            width="stretch",
-        ):
-            request_page(current_page + 1)
-    with last:
-        if st.button(
-            "末页",
-            disabled=current_page >= max_page,
-            key=f"{key_prefix}_last",
-            width="stretch",
-        ):
-            request_page(max_page)
+    with right_col:
+        with st.container(horizontal=True, horizontal_alignment="right", gap="small"):
+            if st.button("下一页", disabled=current_page >= max_page, key=f"{key_prefix}_next", icon=":material/chevron_right:"):
+                request_page(current_page + 1)
+            if st.button("末页", disabled=current_page >= max_page, key=f"{key_prefix}_last", icon=":material/last_page:"):
+                request_page(max_page)
 
 
 def make_booru_client(timeout: float = 60.0 * 5, pool_size: int = MEDIA_CONCURRENCY) -> Booru:
@@ -1032,12 +1069,9 @@ def main() -> None:
         st.session_state["_last_query"] = query
         apply_pending_page(max_page)
         current_page = st.session_state[PAGE_KEY]
+        current_page = render_page_jump_controls(current_page, max_page, len(filtered), len(packages))
         start = (current_page - 1) * page_size
         page_items = filtered[start : start + page_size]
-        st.markdown(
-            f"<div class='toolbar-note'>当前显示 {len(filtered):,} / {len(packages):,} 个表情包。</div>",
-            unsafe_allow_html=True,
-        )
 
         batch_col, page_select_col = st.columns([3.4, 1], vertical_alignment="bottom")
         with batch_col:
