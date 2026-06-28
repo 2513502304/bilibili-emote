@@ -22,6 +22,7 @@ client = Booru(
     base_url=(base_url := (referer := "https://www.bilibili.com")),
     proxies=None,
     trust_env=False,
+    multiplexed=False,
     max_attempt_number=3,
     retries=3,
     rate_limit=None,
