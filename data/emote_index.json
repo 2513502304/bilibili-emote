@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-07-16T19:10:13Z",
-    "count": 7406,
+    "updated_at": "2026-07-17T19:07:54Z",
+    "count": 7415,
     "packages": [
         {
             "id": 1,
@@ -74063,6 +74063,96 @@
             "type": 12,
             "type_label": "充电所得",
             "first_seen_at": "2026-07-16T19:10:13Z"
+        },
+        {
+            "id": 10098,
+            "name": "田中姬铃木雏动态表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/cf52987fe2c785faa774068660ca8098eefa8177.png",
+            "mtime": 1784260801,
+            "created_at": "2026/07/17 12:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-17T19:07:54Z"
+        },
+        {
+            "id": 10099,
+            "name": "周梓琦表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/b2baf3c276ffa55a9ff153e0a61bdbd610d18c75.png",
+            "mtime": 1784260801,
+            "created_at": "2026/07/17 12:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-17T19:07:54Z"
+        },
+        {
+            "id": 10100,
+            "name": "2026明日方舟音律联觉昔时我见",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/a0675ecaf2755cef356208e40eb142d1cd11e872.png",
+            "mtime": 1784260802,
+            "created_at": "2026/07/17 12:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-17T19:07:54Z"
+        },
+        {
+            "id": 10101,
+            "name": "云起时表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/8b72490042bd0674d2a042a22873d2141d13a34d.png",
+            "mtime": 1784269360,
+            "created_at": "2026/07/17 14:22",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-17T19:07:54Z"
+        },
+        {
+            "id": 10102,
+            "name": "chevy表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/395055074c6f1886118b41093d7c90df33e48c39.png",
+            "mtime": 1784275261,
+            "created_at": "2026/07/17 16:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-17T19:07:54Z"
+        },
+        {
+            "id": 10103,
+            "name": "波光拾音表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/04eab85669037a2318c6b87af65f6bcb191a9643.png",
+            "mtime": 1784282461,
+            "created_at": "2026/07/17 18:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-17T19:07:54Z"
+        },
+        {
+            "id": 10104,
+            "name": "电掣心频·动态表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/2389749a5a1901470e955456b4f5630f923dde46.png",
+            "mtime": 1784286002,
+            "created_at": "2026/07/17 19:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-17T19:07:54Z"
+        },
+        {
+            "id": 10105,
+            "name": "电掣心频·静态表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/7eb6d510ead468882911efa1b19706650d1f08a0.png",
+            "mtime": 1784286002,
+            "created_at": "2026/07/17 19:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-17T19:07:54Z"
+        },
+        {
+            "id": 10106,
+            "name": "姬月樱",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/7f0adb1e414891ad22f5459db5f76ca32e59d8bc.png",
+            "mtime": 1784289300,
+            "created_at": "2026/07/17 19:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-17T19:07:54Z"
         }
     ]
 }
