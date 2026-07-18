@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-07-17T19:07:54Z",
-    "count": 7415,
+    "updated_at": "2026-07-18T19:03:06Z",
+    "count": 7421,
     "packages": [
         {
             "id": 1,
@@ -64968,8 +64968,8 @@
             "id": 9038,
             "name": "美味花蘑菇（充电）",
             "preview_url": "https://i0.hdslb.com/bfs/garb/e7b7ed0d5521989852e3dd35befa4bff82bbc0f5.png",
-            "mtime": 1769421844,
-            "created_at": "2026/01/26 18:04",
+            "mtime": 1784365743,
+            "created_at": "2026/07/18 17:09",
             "type": 12,
             "type_label": "充电所得",
             "first_seen_at": "2026-06-14T04:13:04Z"
@@ -73775,6 +73775,26 @@
             "first_seen_at": "2026-07-16T19:10:13Z"
         },
         {
+            "id": 10065,
+            "name": "2026明日方舟音律联觉",
+            "preview_url": "https://i0.hdslb.com/bfs/emote/92178afdff76d3a18c331990d8717157859d6521.png",
+            "mtime": 1784354830,
+            "created_at": "2026/07/18 14:07",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-18T19:03:06Z"
+        },
+        {
+            "id": 10065,
+            "name": "2026明日方舟音律联觉",
+            "preview_url": "https://i0.hdslb.com/bfs/emote/92178afdff76d3a18c331990d8717157859d6521.png",
+            "mtime": 1784354830,
+            "created_at": "2026/07/18 14:07",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-18T19:03:06Z"
+        },
+        {
             "id": 10066,
             "name": "言和回声静态表情包",
             "preview_url": "https://i0.hdslb.com/bfs/garb/93e40b8dbaf66231cd2b87c972d447635737117d.png",
@@ -74153,6 +74173,46 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-07-17T19:07:54Z"
+        },
+        {
+            "id": 10108,
+            "name": "Yvaine可可",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/d0c48659bfd0a57c67b0ad0b2ff8b198e151302e.png",
+            "mtime": 1784343301,
+            "created_at": "2026/07/18 10:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-18T19:03:06Z"
+        },
+        {
+            "id": 10109,
+            "name": "花里夜宵",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/b28402046112c5ec747bdf781455407599ebab7b.png",
+            "mtime": 1784361300,
+            "created_at": "2026/07/18 15:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-18T19:03:06Z"
+        },
+        {
+            "id": 10110,
+            "name": "咻咻满",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/e4b269ae525dc93ca4c1a7fb40c1671592afc588.png",
+            "mtime": 1784368500,
+            "created_at": "2026/07/18 17:55",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-18T19:03:06Z"
+        },
+        {
+            "id": 10111,
+            "name": "秘闻录像带表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/2e2e32328581ac5c54085848e110110a17a70b54.png",
+            "mtime": 1784376061,
+            "created_at": "2026/07/18 20:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-18T19:03:06Z"
         }
     ]
 }
