@@ -1,8 +1,8 @@
 {
     "schema_version": 1,
     "source": "https://api.bilibili.com/x/emote/setting/panel?business=reply",
-    "updated_at": "2026-07-18T19:03:06Z",
-    "count": 7421,
+    "updated_at": "2026-07-19T19:05:22Z",
+    "count": 7423,
     "packages": [
         {
             "id": 1,
@@ -31428,8 +31428,8 @@
             "id": 4391,
             "name": "圆桌动漫（充电）",
             "preview_url": "https://i0.hdslb.com/bfs/garb/4030569aa0e5fc18c2a62512018edf4438827412.png",
-            "mtime": 1759549757,
-            "created_at": "2025/10/04 11:49",
+            "mtime": 1784434815,
+            "created_at": "2026/07/19 12:20",
             "type": 12,
             "type_label": "充电所得",
             "first_seen_at": "2026-06-14T04:13:04Z"
@@ -69268,8 +69268,8 @@
             "id": 9539,
             "name": "文和乱想（充电）",
             "preview_url": "https://i0.hdslb.com/bfs/garb/e544bcc1d725dd59b4ca4725864b9fe0ba8b86f5.png",
-            "mtime": 1784228716,
-            "created_at": "2026/07/17 03:05",
+            "mtime": 1784406367,
+            "created_at": "2026/07/19 04:26",
             "type": 12,
             "type_label": "充电所得",
             "first_seen_at": "2026-06-14T04:13:04Z"
@@ -73785,16 +73785,6 @@
             "first_seen_at": "2026-07-18T19:03:06Z"
         },
         {
-            "id": 10065,
-            "name": "2026明日方舟音律联觉",
-            "preview_url": "https://i0.hdslb.com/bfs/emote/92178afdff76d3a18c331990d8717157859d6521.png",
-            "mtime": 1784354830,
-            "created_at": "2026/07/18 14:07",
-            "type": 3,
-            "type_label": "购买所得",
-            "first_seen_at": "2026-07-18T19:03:06Z"
-        },
-        {
             "id": 10066,
             "name": "言和回声静态表情包",
             "preview_url": "https://i0.hdslb.com/bfs/garb/93e40b8dbaf66231cd2b87c972d447635737117d.png",
@@ -74213,6 +74203,36 @@
             "type": 3,
             "type_label": "购买所得",
             "first_seen_at": "2026-07-18T19:03:06Z"
+        },
+        {
+            "id": 10112,
+            "name": "p19收藏集表情包",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/60dde96d735176e06cf0e216ce67b7875f8a3db1.png",
+            "mtime": 1784455201,
+            "created_at": "2026/07/19 18:00",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-19T19:05:22Z"
+        },
+        {
+            "id": 10113,
+            "name": "HERETICS·无畏契约",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/4de577e03ed207725dedca727e54a4cba7d72cfa.png",
+            "mtime": 1784462461,
+            "created_at": "2026/07/19 20:01",
+            "type": 3,
+            "type_label": "购买所得",
+            "first_seen_at": "2026-07-19T19:05:22Z"
+        },
+        {
+            "id": 10114,
+            "name": "极光子（充电）",
+            "preview_url": "https://i0.hdslb.com/bfs/garb/603155181c8d639ab76b8869dc41c6fb63b29df5.png",
+            "mtime": 1784483521,
+            "created_at": "2026/07/20 01:52",
+            "type": 12,
+            "type_label": "充电所得",
+            "first_seen_at": "2026-07-19T19:05:22Z"
         }
     ]
 }
